@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5fb4a76a.css",
+    "main.js": "/static/js/main.d1c838df.js",
+    "static/media/rexoit-about-image.png": "/static/media/rexoit-about-image.a2e2e77b4fa8896e63f3.png",
+    "static/media/bg2.png": "/static/media/bg2.dc194af8acc7f9bc9685.png",
+    "static/media/therapypreview.png": "/static/media/therapypreview.d97fc493f6270da9f07d.png",
+    "static/media/logo-stretched-wide-e1638035459893.png": "/static/media/logo-stretched-wide-e1638035459893.244e9ddce1bcec9563e8.png",
+    "static/media/Optimized-OWINKS1-1024x853.jpg": "/static/media/Optimized-OWINKS1-1024x853.ca59e83be860c0cee588.jpg",
+    "static/media/LL1-ouai0puf0e37giyah65pk5cx09ux9gslu336ob98u8.png": "/static/media/LL1-ouai0puf0e37giyah65pk5cx09ux9gslu336ob98u8.4ddce9f315c9eb88a28f.png",
+    "static/media/Scheduling-1.gif": "/static/media/Scheduling-1.1531f505e7cc636f1cbb.gif",
+    "static/media/HIPAA-Compliance-Verification-Seal-of-compliance-e1637986779983.png": "/static/media/HIPAA-Compliance-Verification-Seal-of-compliance-e1637986779983.2b21e10213e860d10db1.png",
+    "static/media/Neuropedia-1-e1638035373984.png": "/static/media/Neuropedia-1-e1638035373984.2482ba4a12adfd4507ff.png",
+    "static/media/logo.png": "/static/media/logo.c038023b730b83f97473.png",
+    "static/media/logobig.png": "/static/media/logobig.c038023b730b83f97473.png",
+    "static/media/ftf-e1638035426166.png": "/static/media/ftf-e1638035426166.ce684986d833053d1c80.png",
+    "static/media/fs_logo_300px.png": "/static/media/fs_logo_300px.3f5b92671c65e2d570e5.png",
+    "index.html": "/index.html",
+    "main.5fb4a76a.css.map": "/static/css/main.5fb4a76a.css.map",
+    "main.d1c838df.js.map": "/static/js/main.d1c838df.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5fb4a76a.css",
+    "static/js/main.d1c838df.js"
+  ]
+}
