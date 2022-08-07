@@ -2,7 +2,7 @@ export const links = [
   {
     name: "Home",
     submenu: false,
-    menuLink: "/home",
+    menuLink: "",
     sublinks: [
       {
         Head: "",
@@ -25,7 +25,18 @@ export const links = [
   {
     name: "Blog",
     submenu: false,
-    menuLink: "/training",
+    menuLink: "/blog",
+    sublinks: [
+      {
+        Head: "",
+        sublink: [{ name: "", link: "" }],
+      },
+    ],
+  },
+  {
+    name: "Career",
+    submenu: false,
+    menuLink: "/Career",
     sublinks: [
       {
         Head: "",
@@ -36,7 +47,7 @@ export const links = [
   {
     name: "About Us",
     submenu: false,
-    menuLink: "/contact",
+    menuLink: "/About",
     sublinks: [
       {
         Head: "",

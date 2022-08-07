@@ -6,6 +6,7 @@ import Img3 from '../../assets/background/ftf-e1638035426166.png'
 import Img4 from '../../assets/background/fs_logo_300px.png'
 import brand1 from '../../assets/service/bsrm.png'
 import brand2 from '../../assets/service/brac-bank.png'
+import brand3 from '../../assets/service/Prime_Bank_Logo.png'
 import AlarmOnIcon from '@mui/icons-material/AlarmOn';
 import Bg2 from '../../assets/background/bg2.png'
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
@@ -26,6 +27,9 @@ import HouseSharpIcon from '@mui/icons-material/HouseSharp';
 import CarRepairSharpIcon from '@mui/icons-material/CarRepairSharp';
 import WhatsappOutlinedIcon from '@mui/icons-material/WhatsappOutlined';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import video1 from '../../assets/background/Video Footage Of Construction Site.mp4'
+import video2 from '../../assets/background/Pexels Videos 2406631.mp4'
+import video3 from '../../assets/background/pexels-alena-darmel-7646697.mp4'
 function Home() {
 
 	const Service = [
@@ -78,7 +82,9 @@ function Home() {
 	return <div>
 
 		<div className="bg-img w-full h-full" >
-			<div class=" flex justify-around items-center  gap-5  flex-col  lg:flex-row   p-2 lg:p-0 ">
+			{/**<video src={video1} autoPlay loop muted></video> */}
+			
+			<div class=" flex justify-around items-center gap-5  flex-col  lg:flex-row   p-2 lg:p-0 ">
 				<div className='flex flex-col justify-center items-center lg:mt-[10%]'>
 					<div className="  lg:p-0 ">
 						<h1 class="text-2xl lg:text-6xl font-bold  lg:text-start  mb-5">
@@ -663,25 +669,25 @@ function Home() {
 					<div class="flex justify-center lg:justify-start space-x-2 mt-5">
 						<button
 							type="button"
-							class="inline-block p-2 rounded bg-orange-600 text-white font-medium text-sm leading-tight uppercase  shadow-md"
+							class="inline-block p-2 rounded bg-blue-600 text-white font-medium text-sm leading-tight uppercase  shadow-lg"
 						>
 							<LocalPhoneSharpIcon />	
 						</button>
 						<button
 							type="button"
-							class="inline-block p-2 rounded bg-orange-600 text-white font-medium text-sm leading-tight uppercase  shadow-md"
+							class="inline-block p-2 rounded bg-blue-600 text-white font-medium text-sm leading-tight uppercase  shadow-lg"
 						>
 							<WhatsappOutlinedIcon />
 						</button>
 						<button
 							type="button"
-							class="inline-block p-2 rounded bg-orange-600 text-white font-medium text-sm leading-tight uppercase  shadow-md"
+							class="inline-block p-2 rounded bg-blue-600 text-white font-medium text-sm leading-tight uppercase  shadow-lg"
 						>
 							<MailOutlineIcon />
 						</button>
 						<button
 							type="button"
-							class="inline-block p-2 rounded bg-orange-600 text-white font-medium text-sm leading-tight uppercase  shadow-md"
+							class="inline-block p-2 rounded bg-blue-600 text-white font-medium text-sm leading-tight uppercase  shadow-lg"
 						>
 							<FacebookIcon />
 						</button>
@@ -691,7 +697,8 @@ function Home() {
 
 
 
-			<div className='lg:mx-20 mt-14 p-2 lg:p-0 '>
+			
+			{/**<div className='lg:mx-20 mt-14 p-2 lg:p-0 '>
 				<p className='text-lg lg:text-2xl font-bold px-3 border-l-8 border-red-500 mb-5  text-blue-900 text-opacity-70'>Why Choose Genex Properties ltd</p>
 
 
@@ -726,8 +733,7 @@ function Home() {
 					</div>
 
 				</div>
-			</div>
-
+			</div> */}
 			<div class=" flex justify-between gap-5  flex-col  lg:flex-row mt-14  lg:mt-28 lg:mx-20">
 				<div className="max-w-lg   p-4 lg:p-0 lg:text-start">
 					<div className='max-w-lg'>

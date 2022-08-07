@@ -2,19 +2,19 @@ import React from 'react';
 import Service1 from '../../assets/service/HIPAA-Compliance-Verification-Seal-of-compliance-e1637986779983.png'
 import Service2 from '../../assets/service/LL1-ouai0puf0e37giyah65pk5cx09ux9gslu336ob98u8.png'
 import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork';
-
+import Logo from '../../assets/logo/logo.png';
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 import DraftsIcon from '@mui/icons-material/Drafts';
 
 function Footer() {
 	const d = new Date();
 	return (
-		<div className="w-full  bg-primary text-white mt-20">
+		<div className="w-full bg-blue-900 bg-opacity-90 text-white  mt-20">
 			<div className="container mx-auto  p-5">
 				<div className="flex justify-between flex-col md:flex-row gap-5">
 					<div className="flex flex-col gap-5 max-w-sm">
 
-						<h1 className='text-2xl font-bold'>Why Therapy PMS</h1>
+						<img src={Logo} className='w-[50%] h-24' alt="" />
 						<div>An ABA stage that is both vigorous and instinctive. Raise your clinical and moral principles. Progress clients with satisfaction simultaneously.</div>
 					</div>
 
@@ -22,14 +22,14 @@ function Footer() {
 						<h1 className="md:text-lg text-md font-bold mb-5"> TOP FEATURES</h1>
 
 						<li className="md:text-sm text-xsm mb-2">
-							Scheduling</li>
+							Home</li>
 
 
-						<li className="md:text-sm text-xsm mb-2">Insurance Billing</li>
+						<li className="md:text-sm text-xsm mb-2">Product Details</li>
 
 
 						<li className="md:text-sm text-xsm mb-2">
-							Client/Parent Portal</li>
+							Career</li>
 						<li className="md:text-sm text-xsm mb-2">
 							AUTH Management</li>
 						<li className="md:text-sm text-xsm mb-2">
@@ -40,13 +40,13 @@ function Footer() {
 						<h1 className="md:text-lg text-md font-bold mb-5"> CONTACT US</h1>
 						<span className="flex items-center gap-2">
 							<MapsHomeWorkIcon />
-							<li className="md:text-sm text-xsm mb-2">205, 48th ST, APT2, Union City, NJ-07087</li>
+							<li className="md:text-sm text-xsm mb-2">Mirpur DOHS 11/6, Mirpur-12</li>
 						</span>
 
 						<span className="flex items-center gap-2">
 							<DraftsIcon />
 							<li className="md:text-sm text-xsm mb-2">
-								sales@amrextherapypm.com</li>
+								genex@gmail.com</li>
 						</span>
 						<span className="flex items-center gap-2">
 							<PhoneEnabledIcon />
@@ -54,60 +54,7 @@ function Footer() {
 						</span>
 					</ul>
 				</div>
-				<div className="flex justify-between flex-col md:flex-row gap-5">
-
-
-					<ul className="md:w-[300px] list-disc">
-						<h1 className="md:text-lg text-md font-bold mb-5"> PRODUCTS</h1>
-
-						<li className="md:text-sm text-xsm mb-2">
-							Practice Management</li>
-
-
-						<li className="md:text-sm text-xsm mb-2">
-							Clinical Solutions</li>
-
-
-						<li className="md:text-sm text-xsm mb-2">
-
-							Managed Billing</li>
-						<li className="md:text-sm text-xsm mb-2">
-							Learning Management System</li>
-						<li className="md:text-sm text-xsm mb-2">
-							Analytics & Reporting</li>
-
-					</ul>
-					<ul className="md:w-[300px] lg:ml-10 list-disc">
-						<h1 className="md:text-lg text-md font-bold mb-5"> SOLUTIONS</h1>
-
-						<li className="md:text-sm text-xsm mb-2">
-							New & Small Practices</li>
-
-
-						<li className="md:text-sm text-xsm mb-2">Large/Multi-Site Practices</li>
-
-
-						<li className="md:text-sm text-xsm mb-2">
-							School-Based ABA/ABA Clinics</li>
-
-
-					</ul>
-					<ul className="md:w-[300px] list-disc">
-						<h1 className="md:text-lg text-md font-bold mb-5"> ABOUT US</h1>
-
-						<li className="md:text-sm text-xsm mb-2">
-							About Company</li>
-
-
-						<li className="md:text-sm text-xsm mb-2">News</li>
-
-
-						<li className="md:text-sm text-xsm mb-2">
-							Contact Us</li>
-
-
-					</ul>
-				</div>
+				
 
 			</div>
 			<div className="md:text-sm text-xsm  text-center bg-secondary w-full">
@@ -118,8 +65,8 @@ function Footer() {
 						<p >privacy policy</p>
 					</div>
 					<div className="flex flex-wrap">
-						<img src={Service1} className='h-11' alt="" />
-						<img src={Service2} className='h-11' alt="" />
+						<img src={Logo} className='h-11 mt-4 rounded' alt="" />
+						
 					</div>
 				</div>
 

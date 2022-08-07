@@ -292,7 +292,31 @@ const Project = () => {
                 </div>
 
             </div>
+            
+            <hr className='h-[1px] mx-auto  bg-red-700  mt-2 lg:mt-5 mb-2 lg:mb-5' />
+            <h1 className='text-lg lg:text-2xl font-bold text-center  text-blue-900 text-opacity-70 '>Project View</h1>
+            <hr className='h-[1px] mx-auto  bg-red-700  mt-2 lg:mt-5 mb-2 lg:mb-5' />
+
+
+            <div className="flex justify-center gap-5 mb-5 p-2 lg:p-0 ">
+                <div>
+                    <img src={building} className='rounded' alt="" />
+                </div>
+                <div>
+                    <img src={building} className='rounded' alt="" />
+                </div>
+            </div>
+            <div className="flex justify-center gap-5 p-2 lg:p-0">
+                <div>
+                    <img src={building} className='rounded' alt="" />
+                </div>
+                <div>
+                    <img src={building} className='rounded' alt="" />
+                </div>
+            </div>
         </div>
+
+        
     )
 }
 
