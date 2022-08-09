@@ -22,10 +22,10 @@ const Project = () => {
     return (
         <div>
 
-            <div className='mt-14 flex flex-col lg:flex-row gap-14'>
+            <div className='mt-14 flex flex-col lg:flex-row justify-center gap-14 p-2'>
 
                 <div className='p-2 lg:p-0'>
-                    <div>
+                    <div className='flex justify-center'>
                         <a href='http://localhost:3000/projectdetails'>  <img src={building} className='rounded' alt="" /></a>
                       
                     </div>
@@ -34,7 +34,7 @@ const Project = () => {
                             type="button"
                             class="block w-full p-2  bg-blue-800 bg-opacity-80 text-white rounded  font-medium text-sm leading-tight uppercase  shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                         >
-                            <HouseSharpIcon />	10 shares left
+                            <HouseSharpIcon />	5 shares left
                         </button>
 
                     </div>
@@ -98,15 +98,16 @@ const Project = () => {
 
                 </div>
                 <div className='p-2 lg:p-0'>
-                    <div>
-                        <img src={building} className='rounded' alt="" />
+                    <div className='flex justify-center'>
+                        <a href='http://localhost:3000/projectdetails'>  <img src={building} className='rounded' alt="" /></a>
+
                     </div>
                     <div class="flex  gap-2 w-full  mt-5 ">
                         <button
                             type="button"
                             class="block w-full p-2  bg-blue-800 bg-opacity-80 text-white rounded  font-medium text-sm leading-tight uppercase  shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                         >
-                            <HouseSharpIcon />	10 shares left
+                            <HouseSharpIcon />	5 shares left
                         </button>
 
                     </div>
@@ -170,15 +171,16 @@ const Project = () => {
 
                 </div>
                 <div className='p-2 lg:p-0'>
-                    <div>
-                        <img src={building} className='rounded' alt="" />
+                    <div className='flex justify-center'>
+                        <a href='http://localhost:3000/projectdetails'>  <img src={building} className='rounded' alt="" /></a>
+
                     </div>
                     <div class="flex  gap-2 w-full  mt-5 ">
                         <button
                             type="button"
                             class="block w-full p-2  bg-blue-800 bg-opacity-80 text-white rounded  font-medium text-sm leading-tight uppercase  shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                         >
-                            <HouseSharpIcon />	10 shares left
+                            <HouseSharpIcon />	5 shares left
                         </button>
 
                     </div>

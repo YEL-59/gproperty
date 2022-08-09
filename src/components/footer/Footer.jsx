@@ -3,18 +3,20 @@ import Service1 from '../../assets/service/HIPAA-Compliance-Verification-Seal-of
 import Service2 from '../../assets/service/LL1-ouai0puf0e37giyah65pk5cx09ux9gslu336ob98u8.png'
 import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork';
 import Logo from '../../assets/logo/logo.png';
+import logo from '../../assets/logo/logo-removebg-preview.png'
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 import DraftsIcon from '@mui/icons-material/Drafts';
 
 function Footer() {
 	const d = new Date();
 	return (
-		<div className="w-full bg-blue-900 bg-opacity-90 text-white  mt-20">
+		<div className="w-full bg-slate-300 bg-opacity-40  text-black  mt-20">
+			<hr />
 			<div className="container mx-auto  p-5">
 				<div className="flex justify-between flex-col md:flex-row gap-5">
 					<div className="flex flex-col gap-5 max-w-sm">
 
-						<img src={Logo} className='w-[50%] h-24' alt="" />
+						<img src={logo} className='w-[50%] h-24' alt="" />
 						<div>An ABA stage that is both vigorous and instinctive. Raise your clinical and moral principles. Progress clients with satisfaction simultaneously.</div>
 					</div>
 
@@ -31,9 +33,9 @@ function Footer() {
 						<li className="md:text-sm text-xsm mb-2">
 							Career</li>
 						<li className="md:text-sm text-xsm mb-2">
-							AUTH Management</li>
+							About us</li>
 						<li className="md:text-sm text-xsm mb-2">
-							Session Notes</li>
+							contact us</li>
 
 					</ul>
 					<ul className="md:w-[300px]">
@@ -58,7 +60,7 @@ function Footer() {
 
 			</div>
 			<div className="md:text-sm text-xsm  text-center bg-secondary w-full">
-				<div className="flex flex-col lg:flex-row  justify-evenly items-center">
+				<div className="flex flex-col lg:flex-row text-white  justify-evenly items-center">
 					<div className="text-center py-2">Copyright &copy; {d.getFullYear()} All right reserved </div>
 					<div className='flex items-center gap-5'>
 						<p className='text-lg   border-r-4 border-red-500 px-4 '>Term</p>

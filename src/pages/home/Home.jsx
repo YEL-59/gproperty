@@ -232,7 +232,7 @@ function Home() {
 					<p className=" text-blue-900 text-opacity-70 text-2xl  text-center font-bold ">
 						100% SECURED
 					</p>
-					<p className=" text-blue-900 text-opacity-70 text-base text-center font-bold ">TRANSACTION</p>
+					<p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold ">TRANSACTION</p>
 
 
 				</div>
@@ -246,7 +246,7 @@ function Home() {
 					<p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold ">
 						TIMELY
 					</p>
-					<p className=" text-blue-900 text-opacity-70 t text-center font-bold ">HANDOVER</p>
+					<p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold ">HANDOVER</p>
 
 
 				</div>
@@ -259,7 +259,7 @@ function Home() {
 					<p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold  ">
 						ZERO FLAT REG.
 					</p>
-					<p className=" text-blue-900 text-opacity-70 text-base text-center font-bold ">& PARKING COST</p>
+					<p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold ">& PARKING COST</p>
 
 
 				</div>
@@ -276,7 +276,7 @@ function Home() {
 					<p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold ">
 						COMMUNITY
 					</p>
-					<p className=" text-blue-900 text-opacity-70 text-base text-center font-bold ">BUILDING</p>
+					<p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold ">BUILDING</p>
 
 
 				</div>
@@ -289,7 +289,7 @@ function Home() {
 					<p className=" text-blue-900 text-opacity-70 text-2xl l text-center font-bold ">
 						LAYOUT
 					</p>
-					<p className=" text-blue-900 text-opacity-70 text-base text-center font-bold ">CUSTOMIZATION</p>
+					<p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold ">CUSTOMIZATION</p>
 
 
 				</div>
@@ -302,7 +302,7 @@ function Home() {
 					<p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold ">
 						COMMITTEE
 					</p>
-					<p className=" text-blue-900 text-opacity-70 text-base text-center font-bold ">SUPERVISION</p>
+					<p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold ">SUPERVISION</p>
 
 
 				</div>
