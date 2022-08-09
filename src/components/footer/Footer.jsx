@@ -59,13 +59,13 @@ function Footer() {
 			</div>
 			<div className="md:text-sm text-xsm  text-center bg-secondary w-full">
 				<div className="flex flex-col lg:flex-row  justify-evenly items-center">
-					<div className="text-center py-5">Copyright &copy; {d.getFullYear()} All right reserved </div>
+					<div className="text-center py-2">Copyright &copy; {d.getFullYear()} All right reserved </div>
 					<div className='flex items-center gap-5'>
 						<p className='text-lg   border-r-4 border-red-500 px-4 '>Term</p>
 						<p >privacy policy</p>
 					</div>
 					<div className="flex flex-wrap">
-						<img src={Logo} className='h-11 mt-4 rounded' alt="" />
+						<img src={Logo} className='h-4  rounded' alt="" />
 						
 					</div>
 				</div>

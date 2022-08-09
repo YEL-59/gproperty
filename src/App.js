@@ -7,6 +7,7 @@ import Career from './pages/career/Career';
 import { Routes, Route } from 'react-router-dom';
 import Footer from './components/footer/Footer';
 import About from './pages/aboutus/About';
+import ProjectD from './pages/projectdetails/ProjectD';
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/project" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/projectdetails" element={<ProjectD />} />
       </Routes>
       <Footer />
     </>

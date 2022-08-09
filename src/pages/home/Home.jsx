@@ -27,6 +27,9 @@ import HouseSharpIcon from '@mui/icons-material/HouseSharp';
 import CarRepairSharpIcon from '@mui/icons-material/CarRepairSharp';
 import WhatsappOutlinedIcon from '@mui/icons-material/WhatsappOutlined';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import Gallary1 from '../../assets/gallary/gallary1.jpg';
+import Gallary2 from '../../assets/gallary/gallery2.jpg';
+import Gallary3 from '../../assets/gallary/gallery3.png'
 import video1 from '../../assets/background/Video Footage Of Construction Site.mp4'
 import video2 from '../../assets/background/Pexels Videos 2406631.mp4'
 import video3 from '../../assets/background/pexels-alena-darmel-7646697.mp4'
@@ -84,15 +87,15 @@ function Home() {
 		<div className="bg-img w-full h-full" >
 			{/**<video src={video1} autoPlay loop muted></video> */}
 			
-			<div class=" flex justify-around items-center gap-5  flex-col  lg:flex-row   p-2 lg:p-0 ">
-				<div className='flex flex-col justify-center items-center lg:mt-[10%]'>
+			<div class=" flex justify-around  gap-5  flex-col  lg:flex-row   p-2 lg:p-0 ">
+				<div className='flex flex-col  lg:mt-[10%]'>
 					<div className="  lg:p-0 ">
-						<h1 class="text-2xl lg:text-6xl font-bold  lg:text-start  mb-5">
+						<h1 class="text-2xl lg:text-6xl font-bold lg:text-white lg:text-start  mb-5">
 							Buy Flat in Bashundhara</h1>
 
 
-						<h2 className='text-lg  lg:text-4xl lg:text-start font-semibold  mb-5'>with Genex Properties Ltd</h2>
-						<p className='text-sm lg:text-lg max-w-lg'>Genex Properties offers <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-blue-900 bg-opacity-80 text-white rounded">40%</span> less cost of current market price with luxurious facilities .</p>
+						<h2 className='text-lg  lg:text-4xl  lg:text-start font-semibold  mb-5'>with Genex Properties Ltd</h2>
+						<p className='text-sm lg:text-lg  max-w-lg'>Genex Properties offers <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-blue-900 bg-opacity-80 text-white rounded">40%</span> less cost of current market price with luxurious facilities .</p>
 						<div class="flex justify-center lg:justify-start space-x-2 mt-5 ">
 							<button
 								type="button"
@@ -104,10 +107,10 @@ function Home() {
 					</div>
 				</div>
 
-				<div className='  rounded-lg shadow-2xl p-5 lg:w-[30%]  lg:mt-24 lg:mb-10 bg-black bg-opacity-60 '>
+				<div className='  rounded-lg shadow-2xl p-5 lg:w-[32%]  lg:mt-14 lg:mb-10 bg-black bg-opacity-60 '>
 					<div className="  ">
 						<form>
-							<h1 className=' text-2xl font-bold text-white'>Build Your Dream Home With Us</h1>
+							<h1 className=' text-2xl  font-bold text-white mb-2'>Build Your Dream Home With Us</h1>
 							<p className='max-w-lg text-white'>share your contact details with us. Our Property Experts will call You soon</p>
 
 
@@ -216,11 +219,11 @@ function Home() {
 
 
 			{/**text-md lg:text-2xl */}
-			<h1 className='text-2xl font-bold text-center  text-blue-900 text-opacity-70 mt-14'>WHY YOU SHOULD BUY FLAT WITH LAND SHARE?</h1>
+			<h1 className='text-2xl lg:text-2xl font-bold text-center  text-blue-900 text-opacity-70 mt-10'>WHY YOU SHOULD BUY FLAT WITH LAND SHARE?</h1>
 			<hr className='h-[1px] mx-auto w-full bg-black mt-2  lg:mt-12 ' />
 
-			<div className='flex flex-col lg:flex-row gap-5 lg:gap-0 justify-evenly mt-14 '>
-				<div className=" block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white w-80">
+			<div className='flex flex-col lg:flex-row gap-5 lg:gap-0 justify-evenly items-center mt-14 '>
+				<div className=" block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none w-80">
 					<div className='flex justify-center mb-4 mt-4'>
 						<img src={virus} alt="" />
 
@@ -234,7 +237,7 @@ function Home() {
 
 				</div>
 
-				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white w-80">
+				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none w-80">
 					<div className='flex justify-center mb-4 mt-4'>
 
 						<img src={clock} alt="" />
@@ -248,7 +251,7 @@ function Home() {
 
 				</div>
 
-				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white w-80">
+				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none w-80">
 					<div className='flex justify-center mb-11 mt-4'>
 						<img src={Zero} className='h-40' alt="" />
 					</div>
@@ -264,8 +267,8 @@ function Home() {
 
 			</div>
 
-			<div className='flex flex-col lg:flex-row gap-5 lg:gap-0 justify-evenly mt-24 '>
-				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white w-80">
+			<div className='flex flex-col lg:flex-row gap-5 lg:gap-0 justify-evenly items-center mt-24 '>
+				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none w-80">
 					<div className='   flex justify-center mb-4 mt-4'>
 						<img src={community} alt="" />
 					</div>
@@ -278,7 +281,7 @@ function Home() {
 
 				</div>
 
-				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white w-80">
+				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none w-80">
 					<div className='flex justify-center mb-4 mt-4'>
 						<img src={custom} alt="" />
 					</div>
@@ -291,7 +294,7 @@ function Home() {
 
 				</div>
 
-				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white w-80">
+				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none w-80">
 					<div className='flex justify-center mb-4 mt-4'>
 						<img src={cm1} alt="" />
 					</div>
@@ -360,8 +363,8 @@ function Home() {
 			</div>
 		</div> */}
 
-			<hr className='h-[1px] mx-auto w-full bg-black lg:mt-24 ' />
-			<h1 className='text-2xl font-bold text-center  text-blue-900 text-opacity-70 mt-10 mb-10'>FEATURED PRODUCT</h1>
+			<hr className='h-[1px] mx-auto w-full bg-black mt-10 lg:mt-24 ' />
+			<h1 className='text-2xl lg:text-2xl font-bold text-center  text-blue-900 text-opacity-70 mt-10 mb-10'>FEATURED PRODUCT</h1>
 			<hr className='h-[1px] mx-auto w-full bg-black  ' />
 
 			<div className='mt-14 flex flex-col lg:flex-row gap-14'>
@@ -424,13 +427,13 @@ function Home() {
 						</button>
 						<button
 							type="button"
-							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase  shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
 							<MailOutlineIcon />	send mail
 						</button>
 						<button
 							type="button"
-							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase  shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase  hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
 							<WhatsappOutlinedIcon />	whatsapp
 						</button>
@@ -496,13 +499,13 @@ function Home() {
 						</button>
 						<button
 							type="button"
-							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase  shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
 							<MailOutlineIcon />	send mail
 						</button>
 						<button
 							type="button"
-							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase  shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
 							<WhatsappOutlinedIcon />	whatsapp
 						</button>
@@ -568,13 +571,13 @@ function Home() {
 						</button>
 						<button
 							type="button"
-							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase  shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
 							<MailOutlineIcon />	send mail
 						</button>
 						<button
 							type="button"
-							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase  shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
 							<WhatsappOutlinedIcon />	whatsapp
 						</button>
@@ -587,8 +590,8 @@ function Home() {
 
 
 			<hr className='h-[1px] mx-auto  bg-black mt-14 lg:mt-24 ' />
-			<h1 className=' text-lg lg:text-2xl font-bold text-center  text-blue-900 text-opacity-70 mt-8'>Buy Flat With Land Share In Just 4 Steps</h1>
-			<p className='text-center text-[10px] mt-4'>Transparency is a big issue in real estate sector. Before investing your hrd earned</p>
+			<h1 className=' text-xl lg:text-2xl font-bold text-center  text-blue-900 text-opacity-70 mt-8'>Buy Flat With Land Share In Just 4 Steps</h1>
+			<p className='text-center text-xsm lg:text-sm  mt-4'>Transparency is a big issue in real estate sector. Before investing your hrd earned</p>
 
 			<hr className='h-[1px] mx-auto  bg-black mt-5 lg:mb-5' />
 
@@ -771,20 +774,20 @@ function Home() {
 			<hr className='h-[1px] mx-auto  bg-red-700  mt-2 lg:mt-5 mb-2 lg:mb-5' />
 
 
-			<div className="flex justify-center gap-5 mb-5 p-2 lg:p-0 ">
+			<div className="grid grid-cols-2 gap-5  p-2 lg:p-0 ">
 				<div>
-					<img src={building} className='rounded' alt="" />
+					<img src={Gallary1} className='rounded' alt="" />
 				</div>
 				<div>
-					<img src={building} className='rounded' alt="" />
+					<img src={Gallary1} className='rounded ' alt="" />
 				</div>
 			</div>
 			<div className="flex justify-center gap-5 p-2 lg:p-0">
 				<div>
-					<img src={building} className='rounded' alt="" />
+					<img src={Gallary3} className='rounded' alt="" />
 				</div>
 				<div>
-					<img src={building} className='rounded' alt="" />
+					<img src={Gallary1} className='rounded' alt="" />
 				</div>
 			</div>
 
@@ -793,95 +796,66 @@ function Home() {
 			<hr className='h-[1px] mx-auto  bg-red-700  mt-24   ' />
 			<h1 className='text-lg lg:text-2xl font-bold text-center  text-blue-900 text-opacity-70 mt-5 '>Get In Touch With Us</h1>
 			<hr className='h-[1px] mx-auto  bg-red-700  mt-2 lg:mt-5 mb-2 lg:mb-5' />
-			<div className="flex flex-col lg:flex-row gap-5">
+			<div className="flex flex-col justify-center items-center lg:flex-row gap-5 p-2 lg:p-0">
 
-				<div className='w-full'>
+				
+				{/** <div className=''>
 					<img src={Bg2} alt="" />
-				</div>
-				<div className='border rounded-lg shadow-2xl p-5 w-full'>
+				</div>*/}
+				<div className='  rounded-lg shadow-2xl p-5   bg-black bg-opacity-70 '>
 					<div className="  ">
 						<form>
+							<h1 className=' text-2xl  font-bold text-white mb-2'>Build Your Dream Home With Us</h1>
+							<p className='max-w-lg text-white'>share your contact details with us. Our Property Experts will call You soon</p>
+
 
 							{/*-- Email input-- */}
-							<div className="mb-6 ">
-								<label htmlFor="">Name*</label>
+							<div className="mb-6 mt-5 text-white">
+								<label htmlFor="">FullName*</label>
 								<input
 									type="text"
 									className="form-control block w-full px-4 py-2 text-lg  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
 									id="exampleFormControlInput2"
-									placeholder="Username"
+									placeholder="Fullname"
 								/>
 							</div>
-							<div className="mb-6 ">
+							<div className="mb-6 text-white">
+								<label htmlFor="">Phone</label>
+								<input
+									type="text"
+									className="form-control block w-full px-4 py-2 text-lg  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
+									id="exampleFormControlInput2"
+									placeholder="Phone"
+								/>
+							</div>
+							<div className="mb-6 text-white">
 								<label htmlFor="">Email*</label>
 								<input
 									type="text"
 									className="form-control block w-full px-4 py-2 text-lg  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
 									id="exampleFormControlInput2"
-									placeholder="Username"
+									placeholder="Email"
 								/>
 							</div>
-							<div className="mb-6 ">
-								<label htmlFor="">Company Name</label>
-								<input
-									type="text"
-									className="form-control block w-full px-4 py-2 text-lg  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
-									id="exampleFormControlInput2"
-									placeholder="Username"
-								/>
-							</div>
-							<div className="mb-6 ">
-								<label htmlFor="">Website Url</label>
-								<input
-									type="text"
-									className="form-control block w-full px-4 py-2 text-lg  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
-									id="exampleFormControlInput2"
-									placeholder="Username"
-								/>
-							</div>
-							<div className="mb-6 ">
-								<label htmlFor="">Phone*</label>
-								<input
-									type="text"
-									className="form-control block w-full px-4 py-2 text-lg  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
-									id="exampleFormControlInput2"
-									placeholder="Username"
-								/>
-							</div>
-							<div className="mb-6 ">
-								<label htmlFor="">Common Message</label>
-								<textarea
-									class="
-        form-control
-        block
-        w-full
-        px-3
-        py-1.5
-        text-base
-        font-normal
-        text-gray-700
-        bg-white bg-clip-padding
-        border border-solid border-gray-300
-        rounded
-        transition
-        ease-in-out
-        m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-      "
-									id="exampleFormControlTextarea1"
-									rows="3"
-									placeholder="Your message"
-								></textarea>
-							</div>
+
+
+
+
 
 
 							{/* Submit button */}
-							<div className="flex  justify-center mb-6">
+							<div className="flex flex-col lg:flex-row  justify-center gap-2 mb-6">
 								<button
 									type="button"
-									className="inline-block px-9 py-2 w-full bg-blue-900 bg-opacity-90 text-white font-medium   rounded shadow-md "
+									className="inline-block px-9 py-2 w-full bg-blue-900 bg-opacity-80 text-white font-medium   rounded shadow-md "
 								>
 									SUBMIT
+								</button>
+								<button
+									type="button"
+									className="inline-block px-9 py-2 w-full bg-blue-900 bg-opacity-80 text-white font-medium   rounded shadow-md "
+								>
+									<LocalPhoneSharpIcon />		Call Now
 								</button>
 							</div>
 
@@ -890,7 +864,6 @@ function Home() {
 						</form>
 					</div>
 				</div>
-
 
 			</div>
 

@@ -33,17 +33,7 @@ export const links = [
       },
     ],
   },
-  {
-    name: "Career",
-    submenu: false,
-    menuLink: "/Career",
-    sublinks: [
-      {
-        Head: "",
-        sublink: [{ name: "", link: "" }],
-      },
-    ],
-  },
+
   {
     name: "About Us",
     submenu: false,
@@ -67,4 +57,16 @@ export const links = [
       },
     ],
   },
+  {
+    name: "Career",
+    submenu: false,
+    menuLink: "/Career",
+    sublinks: [
+      {
+        Head: "",
+        sublink: [{ name: "", link: "" }],
+      },
+    ],
+  },
+
 ];
