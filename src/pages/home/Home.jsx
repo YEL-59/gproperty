@@ -7,6 +7,11 @@ import Img4 from '../../assets/background/fs_logo_300px.png'
 import brand1 from '../../assets/service/bsrm.png'
 import brand2 from '../../assets/service/brac-bank.png'
 import brand3 from '../../assets/service/Prime_Bank_Logo.png'
+import brand4 from '../../assets/service/fresh.png';
+import brand5 from '../../assets/service/ksrm-logo.png';
+import brand6 from '../../assets/service/crown.png';
+import brand7 from '../../assets/service/aks.jpg';
+import brand8 from '../../assets/service/rak.png';
 import AlarmOnIcon from '@mui/icons-material/AlarmOn';
 import Bg2 from '../../assets/background/bg2.png'
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
@@ -38,7 +43,7 @@ function Home() {
 	const Service = [
 		{
 			id: 1,
-			ServiceImg: require('../../assets/service/Scheduling-1.gif'),
+			ServiceImg: require('../../assets/icon/reg__1_-removebg-preview.png'),
 			ServiceTitle: 'Book Your ',
 			Servicesubtitle: 'Desired Flat',
 			ServiceBody: 'No Lottery You can choice your floor and bok only at 2lakh taka',
@@ -47,7 +52,7 @@ function Home() {
 		},
 		{
 			id: 1,
-			ServiceImg: require('../../assets/service/Scheduling-1.gif'),
+			ServiceImg: require('../../assets/icon/reg__3_-removebg-preview.png'),
 			ServiceTitle: 'Get Land ',
 			Servicesubtitle: 'Registration Paper',
 			ServiceBody: 'pay land shar price and get land registration paper',
@@ -56,7 +61,7 @@ function Home() {
 		},
 		{
 			id: 1,
-			ServiceImg: require('../../assets/service/Scheduling-1.gif'),
+			ServiceImg: require('../../assets/icon/pay-removebg-preview.png'),
 			ServiceTitle: 'Pay Construction',
 			Servicesubtitle: 'Cost In Installment',
 			ServiceBody: 'Pay Construction expense in installment and supervise development progress',
@@ -65,7 +70,7 @@ function Home() {
 		},
 		{
 			id: 1,
-			ServiceImg: require('../../assets/service/Scheduling-1.gif'),
+			ServiceImg: require('../../assets/icon/handover-removebg-preview.png'),
 			ServiceTitle: 'Get Handover ',
 			Servicesubtitle: 'In Just 3 Years',
 			ServiceBody: 'No delay in project handover guaranteed project handover in 3 years',
@@ -87,7 +92,7 @@ function Home() {
 		<div className="bg-img w-full h-full" >
 			{/**<video src={video1} autoPlay loop muted></video> */}
 			
-			<div class=" flex justify-around  gap-5  flex-col  lg:flex-row   p-2 lg:p-0 ">
+			<div class=" flex justify-evenly xl:justify-center   gap-5  flex-col  lg:flex-row   p-2 lg:p-0 ">
 				<div className='flex flex-col  lg:mt-[10%]'>
 					<div className="  lg:p-0 ">
 						<h1 class="text-2xl lg:text-6xl font-bold lg:text-white lg:text-start  mb-5">
@@ -107,7 +112,7 @@ function Home() {
 					</div>
 				</div>
 
-				<div className='  rounded-lg shadow-2xl p-5 lg:w-[32%]  lg:mt-14 lg:mb-10 bg-black bg-opacity-60 '>
+				<div className='  rounded-lg shadow-2xl p-5 xl:w-[32%]  lg:mt-14 lg:mb-10 bg-black bg-opacity-60 '>
 					<div className="  ">
 						<form>
 							<h1 className=' text-2xl  font-bold text-white mb-2'>Build Your Dream Home With Us</h1>
@@ -599,11 +604,11 @@ function Home() {
 
 
 
-			<div className="grid grid-cols-1 lg:grid-cols-4 gap-y-6  gap-2 mt-12 lg:mx-20 p-2 lg:p-0">
+			<div className="grid grid-cols-1 lg:grid-cols-4 gap-y-6  gap-2 mt-20 mb-20 lg:mx-20 p-2 lg:p-0">
 				{Service.map((x) => (
 					<div className=' p-2' key={x.id}>
 						<div className='flex justify-center items-center'>
-							<img src={x.ServiceImg} alt="" />
+							<img src={x.ServiceImg} className='w-1/2' alt="" />
 						</div>
 						<h1 className='text-2xl font-bold text-center  text-blue-900 text-opacity-70 mt-5'>{x.ServiceTitle}</h1>
 						<h1 className='text-2xl font-bold text-center  text-blue-900 text-opacity-70 mb-2'>{x.Servicesubtitle}</h1>
@@ -619,38 +624,38 @@ function Home() {
 
 
 				<div className="flex flex-col lg:flex-row gap-5 p-2 ">
-					<div className='border-2 p-4 py-10 flex justify-center items-center '>
+					<div className='border-2 p-4 py-10 h-1/1 w-1/2 flex justify-center items-center '>
 						<img src={brand1}  alt="" />
 
 					</div>
-					<div className='border-2 p-4 py-10  '>
-						<img src={brand1} alt="" />
+					<div className='border-2 p-4 py-10  h-1/1 w-1/2 flex justify-center items-center'>
+						<img src={brand2} alt="" />
 
 					</div>
-					<div className='border-2 p-4 py-10  '>
-						<img src={brand1} alt="" />
+					<div className='border-2 p-4 py-10  h-1/1 w-1/2 flex justify-center items-center'>
+						<img src={brand3} alt="" />
 
 					</div>
-					<div className='border-2 p-4 py-10 flex justify-center items-center  '>
-						<img src={brand1} alt="" />
+					<div className='border-2 p-4 py-10 h-1/1 w-1/2 flex justify-center items-center  '>
+						<img src={brand4} alt="" />
 
 					</div>
 				</div>
 				<div className="flex flex-col lg:flex-row gap-5 p-2 ">
-					<div className='border-2 p-4 py-10 flex justify-center items-center '>
-						<img src={brand1} alt="" />
+					<div className='border-2 p-4  h-1/1 w-1/2 flex justify-center items-center '>
+						<img src={brand5} alt="" />
 
 					</div>
-					<div className='border-2 p-4 py-10  '>
-						<img src={brand1} alt="" />
+					<div className='border-2 p-4   h-1/1 w-1/2 flex justify-center items-center'>
+						<img src={brand6}   alt="" />
 
 					</div>
-					<div className='border-2 p-4 py-10  '>
-						<img src={brand1} alt="" />
+					<div className='border-2 p-4  h-1/1 w-1/2 flex justify-center items-center'>
+						<img src={brand7}  alt="" />
 
 					</div>
-					<div className='border-2 p-4 py-10 flex justify-center items-center  '>
-						<img src={brand1} alt="" />
+					<div className='border-2 p-4  h-1/1 w-1/2 flex justify-center items-center  '>
+						<img src={brand8}   alt="" />
 
 					</div>
 				</div>
@@ -747,7 +752,8 @@ function Home() {
 								type="button"
 								class="inline-block px-6 py-2.5 bg-orange-700 rounded text-white font-medium text-sm leading-tight uppercase  shadow-md"
 							>
-								<ArrowCircleRightIcon />	Contact Us
+								<a href="https://www.youtube.com/channel/UC_fbrk9-nA3pMjJHZKGuszA/featured"><ArrowCircleRightIcon />	Visit Our Chanel</a>
+								
 							</button>
 						</div>
 

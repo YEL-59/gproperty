@@ -17,7 +17,7 @@ function Footer() {
 					<div className="flex flex-col gap-5 max-w-sm">
 
 						<img src={logo} className='w-[50%] h-24' alt="" />
-						<div>An ABA stage that is both vigorous and instinctive. Raise your clinical and moral principles. Progress clients with satisfaction simultaneously.</div>
+						<div>Genex Properties Ltd. offers flat at 40% less cost of current market price with luxurious facilities. Build Your Dream Home With Us.</div>
 					</div>
 
 					<ul className="md:w-[300px] list-disc">
@@ -25,6 +25,8 @@ function Footer() {
 
 						<li className="md:text-sm text-xsm mb-2">
 							Home</li>
+
+
 
 
 						<li className="md:text-sm text-xsm mb-2">Product Details</li>
@@ -42,7 +44,7 @@ function Footer() {
 						<h1 className="md:text-lg text-md font-bold mb-5"> CONTACT US</h1>
 						<span className="flex items-center gap-2">
 							<MapsHomeWorkIcon />
-							<li className="md:text-sm text-xsm mb-2">Mirpur DOHS 11/6, Mirpur-12</li>
+							<li className="md:text-sm text-xsm mb-2">Mirpur DOHS 9/A ave 11RD, Mirpur-12</li>
 						</span>
 
 						<span className="flex items-center gap-2">

@@ -24,7 +24,7 @@ const ProjectD = () => {
                 <div>
                     <img src={building1} className=' mt-4 rounded block mx-auto' alt="" />
                 </div>
-                <div className='lg:w-[50%]' >
+                <div className='lg:w-[60%] flex justify-center' >
                     <div className='  rounded-lg shadow-2xl p-5 '>
                         <div className=" ">
                             <form>
