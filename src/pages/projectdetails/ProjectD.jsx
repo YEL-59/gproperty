@@ -24,7 +24,8 @@ const ProjectD = () => {
                 <div>
                     <img src={building1} className=' mt-4 rounded block mx-auto' alt="" />
                 </div>
-                <div className='lg:w-[60%] flex justify-center' >
+                <div className='w-[100%] lg:w-[50%]
+                 ' >
                     <div className='  rounded-lg shadow-2xl p-5 '>
                         <div className=" ">
                             <form>
@@ -147,22 +148,75 @@ const ProjectD = () => {
                     <div>
                         <img src={building2} className='h-[80%] rounded ' alt="" />
                     </div>
-                    <div className='mt-14 font-bold text-2xl'>
-                        <span><h1 className='lg:text-4xl'>Location: Bashundhara M Block</h1></span>
-                        <span><h1 className='lg:text-4xl'>Land Size: 10 Khata</h1></span>
-                        <span><h1 className='lg:text-4xl'>Building Type: B + G + 9</h1></span>
-                        <span><h1 className='lg:text-4xl'>Flat Size: 2550 sqft</h1></span>
-                        <span><h1 className='lg:text-4xl'>Block Unite: M</h1></span>
-                        <span><h1 className='lg:text-4xl'>Parking: 1</h1></span>
-                        <span><h1 className='lg:text-4xl'>Face: South</h1></span>
-                        <span><h1 className='lg:text-4xl'>Face: South</h1></span>
-                        <span><h1 className='lg:text-4xl'>Face: South</h1></span>
+                    <div className='flex flex-col justify-center  '>
+                        <button
+                            type="button"
+                            class=" px-6 mb-1 flex flex-row gap-2 items-center   rounded  lg:w-auto font-medium text-sm leading-tight    hover:bg-blue-900 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
+                        >
+                            <HotelIcon sx={{ fontSize: 40 }} /> <span className='text-xl lg:text-4xl text-blue-900 hover:text-white'> 4 Beds</span>
+                        </button>
+                        <button
+                            type="button"
+                            class="flex flex-row gap-2 items-center px-6 mb-1     rounded  lg:w-auto font-medium text-sm leading-tight  hover:bg-blue-900 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
+                        >
+                            <BathtubSharpIcon sx={{ fontSize: 40 }} /> <span className='text-xl lg:text-4xl text-blue-900 hover:text-white'> 4 Bath</span>
+                        </button>
+                        <button
+                            type="button"
+                            class="flex flex-row gap-2 items-center px-6 mb-1     rounded  lg:w-auto font-medium text-sm leading-tight   hover:bg-blue-900 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
+                        >
+                            <HouseSharpIcon sx={{ fontSize: 40 }} /> <span className='text-xl lg:text-4xl text-blue-900 hover:text-white'> 2550 sqft</span>
+                        </button>
+                        <button
+                            type="button"
+                            class="flex flex-row gap-2 items-center px-6     rounded  lg:w-auto font-medium text-sm leading-tight   hover:bg-blue-900 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
+                        >
+                            <CarRepairSharpIcon sx={{ fontSize: 40 }} /> <span className='text-xl lg:text-4xl text-blue-900 hover:text-white'> 1 parking</span>
+                        </button>
+                        <button
+                            type="button"
+                            class=" px-6 mb-1 flex flex-row gap-2 items-center   rounded  lg:w-auto font-medium text-sm leading-tight    hover:bg-blue-900 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                        >
+                            <PoolIcon sx={{ fontSize: 40 }} /> <span className='text-xl lg:text-4xl text-blue-900 hover:text-white'> swimming</span>
+                        </button>
+                        <button
+                            type="button"
+                            class=" px-6 mb-1 flex flex-row gap-2 items-center  text-black rounded  lg:w-auto font-medium text-sm leading-tight    hover:bg-blue-900 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                        >
+                            <YardIcon sx={{ fontSize: 40 }} /> <span className='text-xl lg:text-4xl text-blue-900 hover:text-white'> Gardening</span>
+                        </button>
+                        <button
+                            type="button"
+                            class=" px-6 mb-1 flex flex-row gap-2 items-center  text-black rounded  lg:w-auto font-medium text-sm leading-tight   hover:bg-blue-900 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                        >
+                            <OutdoorGrillIcon sx={{ fontSize: 40 }} /> <span className='text-xl lg:text-4xl text-blue-900 hover:text-white'> BBq</span>
+                        </button>
+                        <button
+                            type="button"
+                            class=" px-6 mb-1 flex flex-row gap-2 items-center  text-black rounded  lg:w-auto font-medium text-sm leading-tight   hover:bg-blue-900 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                        >
+                            <MeetingRoomIcon sx={{ fontSize: 40 }} /> <span className='text-xl lg:text-4xl text-blue-900 hover:text-white'> Conference room</span>
+                        </button>
+                        <button
+                            type="button"
+                            class=" px-6 mb-1 flex flex-row gap-2 items-center  text-black rounded  lg:w-auto font-medium text-sm leading-tight    hover:bg-blue-900 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                        >
+                            <FitnessCenterIcon sx={{ fontSize: 40 }} /> <span className='text-xl lg:text-4xl text-blue-900 hover:text-white'> Gym</span>
+                        </button>
+                        <button
+                            type="button"
+                            class=" px-6 mb-1 flex gap-5 flex-row  items-center   rounded  lg:w-auto font-medium text-sm leading-tight    hover:bg-blue-900 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                        >
+                            <MosqueIcon sx={{ fontSize: 40 }} /> <span className='text-xl lg:text-4xl text-blue-900 hover:text-white'> Prayer Zone</span>
+                        </button>
                     </div>
+                  
                 </div>
+
+
 
             </div>
             <hr className=' bg-black ' />
-
             <h1 className='font-bold lg:text-2xl text-center mt-[20px]'> Features and Amenities</h1>
             <hr className=' bg-black mt-[20px] ' />
 

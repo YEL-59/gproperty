@@ -24,7 +24,7 @@ function Navbar() {
 						<div class="flex items-center p-5 gap-2">
 							<button type="button" class="inline-block px-6 py-2 bg-blue-900 bg-opacity-80 text-white font-medium text-sm leading-tight uppercase rounded-lg shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
 								
-								<LocalPhoneSharpIcon />01748885444</button>
+								<LocalPhoneSharpIcon /> <a href="tel:+88001748885444p123">01748885444</a> </button>
 						</div>
 					</ul>
 

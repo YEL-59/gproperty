@@ -74,7 +74,7 @@ const Contact = () => {
                             type="text"
                             className="form-control block w-full px-4 py-2 text-md  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
                             id="exampleFormControlInput2"
-                            placeholder="Password"
+                            placeholder="phone"
                         />
                     </div>
                     <div className="mb-6 ">
@@ -143,7 +143,7 @@ const Contact = () => {
                     <div className="flex  justify-center mb-6">
                         <button
                             type="button"
-                            className="inline-block px-9 py-2  bg-primary text-white font-medium   rounded shadow-md "
+                            className="inline-block px-9 py-2  bg-blue-900 bg-opacity-80%  text-white font-medium   rounded shadow-md "
                         >
                             Send Quote
                         </button>

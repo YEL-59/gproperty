@@ -79,19 +79,20 @@ const Project = () => {
                             type="button"
                             class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                         >
-                            <LocalPhoneSharpIcon />	CALL NOW
+                            <LocalPhoneSharpIcon />	<a href="tel:+88001748885444p123">call Now</a>
                         </button>
                         <button
                             type="button"
                             class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                         >
-                            <MailOutlineIcon />	send mail
+                            <MailOutlineIcon />	<a href="mailto:genexpropertiesltd@gmail.com"> send mail</a>
                         </button>
                         <button
                             type="button"
-                            class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase  hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                            class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                         >
-                            <WhatsappOutlinedIcon />	whatsapp
+                            <WhatsappOutlinedIcon />
+                            <a href="https://web.whatsapp.com/">whatsapp</a>
                         </button>
                     </div>
 
@@ -152,19 +153,20 @@ const Project = () => {
                             type="button"
                             class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                         >
-                            <LocalPhoneSharpIcon />	CALL NOW
+                            <LocalPhoneSharpIcon />	<a href="tel:+88001748885444p123">call Now</a>
                         </button>
                         <button
                             type="button"
                             class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                         >
-                            <MailOutlineIcon />	send mail
+                            <MailOutlineIcon />	<a href="mailto:genexpropertiesltd@gmail.com"> send mail</a>
                         </button>
                         <button
                             type="button"
                             class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                         >
-                            <WhatsappOutlinedIcon />	whatsapp
+                            <WhatsappOutlinedIcon />
+                            <a href="https://web.whatsapp.com/">whatsapp</a>
                         </button>
                     </div>
 
@@ -225,19 +227,20 @@ const Project = () => {
                             type="button"
                             class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                         >
-                            <LocalPhoneSharpIcon />	CALL NOW
+                            <LocalPhoneSharpIcon />	<a href="tel:+88001748885444p123">call Now</a>
                         </button>
                         <button
                             type="button"
                             class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                         >
-                            <MailOutlineIcon />	send mail
+                            <MailOutlineIcon />	<a href="mailto:genexpropertiesltd@gmail.com"> send mail</a>
                         </button>
                         <button
                             type="button"
                             class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                         >
-                            <WhatsappOutlinedIcon />	whatsapp
+                            <WhatsappOutlinedIcon />
+                            <a href="https://web.whatsapp.com/">whatsapp</a>
                         </button>
                     </div>
 

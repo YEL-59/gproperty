@@ -100,13 +100,13 @@ function Home() {
 
 
 						<h2 className='text-lg  lg:text-4xl  lg:text-start font-semibold  mb-5'>with Genex Properties Ltd</h2>
-						<p className='text-sm lg:text-lg  max-w-lg'>Genex Properties offers <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-blue-900 bg-opacity-80 text-white rounded">40%</span> less cost of current market price with luxurious facilities .</p>
+						<p className='text-sm lg:text-lg  max-w-lg'>Genex Properties offers <span class="inline-block py-2 px-2.5 leading-none text-center whitespace-nowrap shadow-lg align-baseline font-bold bg-blue-900 bg-opacity-80 text-white rounded">40%</span> less cost of current market price with luxurious facilities .</p>
 						<div class="flex justify-center lg:justify-start space-x-2 mt-5 ">
 							<button
 								type="button"
-								class="inline-block px-6 py-2.5 bg-blue-800 bg-opacity-80 text-white rounded w-full lg:w-auto font-medium text-sm leading-tight uppercase  shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+								class="inline-block px-6 py-2.5 bg-blue-900 bg-opacity-80 text-white rounded w-full lg:w-auto font-medium text-sm leading-tight uppercase shadow-lg hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 							>
-								<LocalPhoneSharpIcon />	Call Now
+								<LocalPhoneSharpIcon />	<a href="tel:+88001748885444p123">call Now</a>
 							</button>
 						</div>
 					</div>
@@ -165,7 +165,7 @@ function Home() {
 									type="button"
 									className="inline-block px-9 py-2 w-full bg-blue-900 bg-opacity-80 text-white font-medium   rounded shadow-md "
 								>
-									<LocalPhoneSharpIcon />		Call Now
+									<LocalPhoneSharpIcon />		<a href="tel:+88001748885444p123">call Now</a>
 								</button>
 							</div>
 
@@ -204,11 +204,11 @@ function Home() {
 			<div className='p-2 lg:p-0'>
 				<div className='flex flex-col justify-center items-center lg:flex-row mt-2 lg:mt-10 p-2 lg:p-0'>
 					<div>
-						<img src={phone} className='h-28' alt="" />
+						<img src={phone} className='h-32' alt="" />
 					</div>
 					<div className='text-center'>
 
-						<h1 className='text-xl font-medium'>Call now to know how you can save <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-blue-900 bg-opacity-80 text-white rounded">40%</span></h1>
+						<h1 className='text-xl font-medium'>Call now to know how you can save <span class="inline-block py-2 px-2.5 leading-none shadow-lg text-center whitespace-nowrap align-baseline font-bold bg-blue-900 bg-opacity-80 text-white rounded">40%</span></h1>
 						<h1 className='text-2xl lg:text-6xl font-medium'>01748885444</h1>
 
 
@@ -217,7 +217,7 @@ function Home() {
 					</div>
 
 				</div>
-				<hr className=' bg-black mt-[20px] lg:mt-[55px]' /></div>
+				<hr className=' bg-black mt-[50px] lg:mt-[55px]' /></div>
 
 
 
@@ -227,90 +227,90 @@ function Home() {
 			<h1 className='text-2xl lg:text-2xl font-bold text-center  text-blue-900 text-opacity-70 mt-10'>WHY YOU SHOULD BUY FLAT WITH LAND SHARE?</h1>
 			<hr className='h-[1px] mx-auto w-full bg-black mt-2  lg:mt-12 ' />
 
-			<div className='flex flex-col lg:flex-row gap-5 lg:gap-0 justify-evenly items-center mt-14 '>
-				<div className=" block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none w-80">
+		
+
+			<div className='grid grid-cols-2 lg:grid-cols-3 gap-y-10 lg:gap-0 gap-5 justify-evenly items-center mt-20 p-2 lg:p-0 '>
+				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none lg:w-80">
+					<div className='   flex justify-center mb-4 mt-4'>
+						<img src={community} alt="" />
+					</div>
+
+					<p className=" text-blue-900 text-opacity-70 text-sm lg:text-2xl text-center font-bold ">
+						COMMUNITY
+					</p>
+					<p className=" text-blue-900 text-opacity-70 text-sm lg:text-2xl text-center font-bold ">BUILDING</p>
+
+
+				</div>
+
+				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none  lg:w-80">
+					<div className='flex justify-center mb-4 mt-4'>
+						<img src={custom} alt="" />
+					</div>
+
+					<p className=" text-blue-900 text-opacity-70 text-sm lg:text-2xl  text-center font-bold ">
+						LAYOUT
+					</p>
+					<p className=" text-blue-900 text-opacity-70 text-sm lg:text-2xl lg:text-2xl text-center font-bold ">CUSTOMIZATION</p>
+
+
+				</div>
+
+				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none  lg:w-80">
+					<div className='flex justify-center mb-4 mt-4'>
+						<img src={cm1} alt="" />
+					</div>
+
+					<p className=" text-blue-900 text-opacity-70 text-sm lg:text-2xl text-center font-bold ">
+						COMMITTEE
+					</p>
+					<p className=" text-blue-900 text-opacity-70 text-sm lg:text-2xl text-center font-bold ">SUPERVISION</p>
+
+
+				</div>
+
+				<div className=" block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none lg:mt-36  lg:w-80">
 					<div className='flex justify-center mb-4 mt-4'>
 						<img src={virus} alt="" />
 
 					</div>
 
-					<p className=" text-blue-900 text-opacity-70 text-2xl  text-center font-bold ">
+					<p className=" text-blue-900 text-opacity-70 text-sm lg:text-2xl  text-center font-bold ">
 						100% SECURED
 					</p>
-					<p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold ">TRANSACTION</p>
+					<p className=" text-blue-900 text-opacity-70 text-sm lg:text-2xl text-center font-bold ">TRANSACTION</p>
 
 
 				</div>
 
-				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none w-80">
+				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none lg:mt-36 lg:w-80">
 					<div className='flex justify-center mb-4 mt-4'>
 
 						<img src={clock} alt="" />
 					</div>
 
-					<p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold ">
+					<p className=" text-blue-900 text-opacity-70 text-sm lg:text-2xl text-center font-bold ">
 						TIMELY
 					</p>
-					<p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold ">HANDOVER</p>
+					<p className=" text-blue-900 text-opacity-70 text-sm lg:text-2xl text-center font-bold ">HANDOVER</p>
 
 
 				</div>
 
-				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none w-80">
+				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none lg:mt-40 lg:w-80">
 					<div className='flex justify-center mb-11 mt-4'>
-						<img src={Zero} className='h-40' alt="" />
+						<img src={Zero} className='h-14 lg:h-40' alt="" />
 					</div>
 
-					<p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold  ">
+					<p className=" text-blue-900 text-opacity-70 text-sm lg:text-2xl text-center font-bold  ">
 						ZERO FLAT REG.
 					</p>
-					<p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold ">& PARKING COST</p>
+					<p className=" text-blue-900 text-opacity-70 text-sm lg:text-2xl text-center font-bold ">& PARKING COST</p>
 
 
 				</div>
-
-
-			</div>
-
-			<div className='flex flex-col lg:flex-row gap-5 lg:gap-0 justify-evenly items-center mt-24 '>
-				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none w-80">
-					<div className='   flex justify-center mb-4 mt-4'>
-						<img src={community} alt="" />
-					</div>
-
-					<p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold ">
-						COMMUNITY
-					</p>
-					<p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold ">BUILDING</p>
-
-
-				</div>
-
-				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none w-80">
-					<div className='flex justify-center mb-4 mt-4'>
-						<img src={custom} alt="" />
-					</div>
-
-					<p className=" text-blue-900 text-opacity-70 text-2xl l text-center font-bold ">
-						LAYOUT
-					</p>
-					<p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold ">CUSTOMIZATION</p>
-
-
-				</div>
-
-				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none w-80">
-					<div className='flex justify-center mb-4 mt-4'>
-						<img src={cm1} alt="" />
-					</div>
-
-					<p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold ">
-						COMMITTEE
-					</p>
-					<p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold ">SUPERVISION</p>
-
-
-				</div>
+				
+				
 
 
 			</div>
@@ -368,7 +368,7 @@ function Home() {
 			</div>
 		</div> */}
 
-			<hr className='h-[1px] mx-auto w-full bg-black mt-10 lg:mt-24 ' />
+			<hr className='h-[1px] mx-auto w-full bg-black mt-20 lg:mt-24 ' />
 			<h1 className='text-2xl lg:text-2xl font-bold text-center  text-blue-900 text-opacity-70 mt-10 mb-10'>FEATURED PRODUCT</h1>
 			<hr className='h-[1px] mx-auto w-full bg-black  ' />
 
@@ -428,19 +428,19 @@ function Home() {
 							type="button"
 							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
-							<LocalPhoneSharpIcon />	CALL NOW
+							<LocalPhoneSharpIcon />	<a href="tel:+88001748885444p123">call Now</a>
 						</button>
 						<button
 							type="button"
 							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
-							<MailOutlineIcon />	send mail
+							<MailOutlineIcon />	<a href="mailto:genexpropertiesltd@gmail.com"> send mail</a>
 						</button>
 						<button
 							type="button"
 							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase  hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
-							<WhatsappOutlinedIcon />	whatsapp
+							<WhatsappOutlinedIcon /><a href="https://web.whatsapp.com/">whatsapp</a>
 						</button>
 					</div>
 
@@ -500,19 +500,20 @@ function Home() {
 							type="button"
 							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
-							<LocalPhoneSharpIcon />	CALL NOW
+							<LocalPhoneSharpIcon />	<a href="tel:+88001748885444p123">call Now</a>
 						</button>
 						<button
 							type="button"
 							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
-							<MailOutlineIcon />	send mail
+							<MailOutlineIcon />	<a href="mailto:genexpropertiesltd@gmail.com"> send mail</a>
 						</button>
 						<button
 							type="button"
 							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
-							<WhatsappOutlinedIcon />	whatsapp
+							<WhatsappOutlinedIcon />	
+							<a href="https://web.whatsapp.com/">whatsapp</a>
 						</button>
 					</div>
 
@@ -572,19 +573,19 @@ function Home() {
 							type="button"
 							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
-							<LocalPhoneSharpIcon />	CALL NOW
+							<LocalPhoneSharpIcon />	<a href="tel:+88001748885444">call Now</a>
 						</button>
 						<button
 							type="button"
 							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
-							<MailOutlineIcon />	send mail
+							<MailOutlineIcon />	 <a href="mailto:genexpropertiesltd@gmail.com"> send mail</a>
 						</button>
 						<button
 							type="button"
 							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
-							<WhatsappOutlinedIcon />	whatsapp
+							<WhatsappOutlinedIcon /><a href="https://web.whatsapp.com/">whatsapp</a>
 						</button>
 					</div>
 
@@ -604,13 +605,13 @@ function Home() {
 
 
 
-			<div className="grid grid-cols-1 lg:grid-cols-4 gap-y-6  gap-2 mt-20 mb-20 lg:mx-20 p-2 lg:p-0">
+			<div className="grid grid-cols-2 lg:grid-cols-4 gap-y-6  gap-2 mt-20 mb-20 lg:mx-20 p-2 lg:p-0">
 				{Service.map((x) => (
 					<div className=' p-2' key={x.id}>
 						<div className='flex justify-center items-center'>
 							<img src={x.ServiceImg} className='w-1/2' alt="" />
 						</div>
-						<h1 className='text-2xl font-bold text-center  text-blue-900 text-opacity-70 mt-5'>{x.ServiceTitle}</h1>
+						<h1 className='text-2xl font-bold text-center   text-blue-900 text-opacity-70 mt-5'>{x.ServiceTitle}</h1>
 						<h1 className='text-2xl font-bold text-center  text-blue-900 text-opacity-70 mb-2'>{x.Servicesubtitle}</h1>
 						<p className='text-center'>{x.ServiceBody}</p>
 					</div>
@@ -623,25 +624,43 @@ function Home() {
 				<p className='text-lg lg:text-2xl font-bold px-3 border-l-8 border-red-500 mb-5  text-blue-900 text-opacity-70'>Associate & Suppliers</p>
 
 
-				<div className="flex flex-col lg:flex-row gap-5 p-2 ">
-					<div className='border-2 p-4 py-10 h-1/1 w-1/2 flex justify-center items-center '>
+				<div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10  gap-5 p-2 ">
+					<div className='border-2  lg:h-1/1 lg:w-1/2 flex justify-center items-center '>
 						<img src={brand1}  alt="" />
 
 					</div>
-					<div className='border-2 p-4 py-10  h-1/1 w-1/2 flex justify-center items-center'>
+					<div className='border-2 p-4 py-10  lg:h-1/1 lg:w-1/2 flex justify-center items-center'>
 						<img src={brand2} alt="" />
 
 					</div>
-					<div className='border-2 p-4 py-10  h-1/1 w-1/2 flex justify-center items-center'>
+					<div className='border-2 p-4 py-10  lg:h-1/1 lg:w-1/2 flex justify-center items-center'>
 						<img src={brand3} alt="" />
 
 					</div>
-					<div className='border-2 p-4 py-10 h-1/1 w-1/2 flex justify-center items-center  '>
+					<div className='border-2 p-4 py-10 lg:h-1/1 lg:w-1/2 flex justify-center items-center  '>
 						<img src={brand4} alt="" />
 
 					</div>
+					<div className='border-2 p-4 py-10 lg:h-1/1 lg:w-1/2 flex justify-center items-center '>
+						<img src={brand5} alt="" />
+
+					</div>
+					<div className='border-2 p-4 py-10  lg:h-1/1 lg:w-1/2 flex justify-center items-center'>
+						<img src={brand6} alt="" />
+
+					</div>
+					<div className='border-2 p-4 py-10  lg:h-1/1 lg:w-1/2 flex justify-center items-center'>
+						<img src={brand7} alt="" />
+
+					</div>
+					<div className='border-2 p-4 py-10 lg:h-1/1 lg:w-1/2 flex justify-center items-center  '>
+						<img src={brand8} alt="" />
+
+					</div>
 				</div>
-				<div className="flex flex-col lg:flex-row gap-5 p-2 ">
+				
+			</div>
+			{/**<div className="flex flex-col lg:flex-row gap-5 p-2 ">
 					<div className='border-2 p-4  h-1/1 w-1/2 flex justify-center items-center '>
 						<img src={brand5} alt="" />
 
@@ -658,13 +677,10 @@ function Home() {
 						<img src={brand8}   alt="" />
 
 					</div>
-				</div>
-			</div>
+				</div> */}
 
 
-
-
-			<div className='flex flex-col lg:flex-row justify-around bg-blue-900 bg-opacity-90 p-5 py-20 border-l-8 border-red-700 mt-24 mb-24 lg:mx-20  '>
+			<div className='p-2 lg:p-0'><div className='flex flex-col lg:flex-row justify-around bg-blue-900 bg-opacity-90 p-5 py-20 border-l-8 border-red-700 mt-24 mb-24 lg:mx-20  '>
 				<div className='max-w-xl'>
 					<h1 className='lg:text-2xl text-white font-bold mb-2'>
 						Get Everything You Know in 1 click</h1>
@@ -679,29 +695,30 @@ function Home() {
 							type="button"
 							class="inline-block p-2 rounded bg-blue-600 text-white font-medium text-sm leading-tight uppercase  shadow-lg"
 						>
-							<LocalPhoneSharpIcon />	
+							<a href="tel:+88001748885444p123"><LocalPhoneSharpIcon /></a>
 						</button>
 						<button
 							type="button"
 							class="inline-block p-2 rounded bg-blue-600 text-white font-medium text-sm leading-tight uppercase  shadow-lg"
 						>
-							<WhatsappOutlinedIcon />
+							<a href="https://web.whatsapp.com/"><WhatsappOutlinedIcon /></a>
 						</button>
 						<button
 							type="button"
 							class="inline-block p-2 rounded bg-blue-600 text-white font-medium text-sm leading-tight uppercase  shadow-lg"
 						>
-							<MailOutlineIcon />
+							<a href="mailto:genexpropertiesltd@gmail.com"><MailOutlineIcon /></a>
 						</button>
 						<button
 							type="button"
 							class="inline-block p-2 rounded bg-blue-600 text-white font-medium text-sm leading-tight uppercase  shadow-lg"
 						>
-							<FacebookIcon />
+							<a href="https://www.facebook.com/genexpropertiesltd"><FacebookIcon /></a>
 						</button>
 					</div>
 				</div>
-			</div>
+			</div></div>
+			
 
 
 
@@ -808,7 +825,8 @@ function Home() {
 				{/** <div className=''>
 					<img src={Bg2} alt="" />
 				</div>*/}
-				<div className='  rounded-lg shadow-2xl p-5   bg-black bg-opacity-70 '>
+
+				<div className='  rounded-lg shadow-2xl p-5   bg-black bg-opacity-70 mt-20'>
 					<div className="  ">
 						<form>
 							<h1 className=' text-2xl  font-bold text-white mb-2'>Build Your Dream Home With Us</h1>
@@ -861,7 +879,7 @@ function Home() {
 									type="button"
 									className="inline-block px-9 py-2 w-full bg-blue-900 bg-opacity-80 text-white font-medium   rounded shadow-md "
 								>
-									<LocalPhoneSharpIcon />		Call Now
+									<LocalPhoneSharpIcon />		 <a href="tel:+88001748885444p123">Call Now</a>
 								</button>
 							</div>
 

@@ -32,7 +32,7 @@ function Blog() {
 
                                 </div>
                                 <p class="text-gray-700 text-base mb-4">
-                                    The On-demand apps are convenient to use. Learn the development process of an on-demand liquor delivery app with thousands of features and programs to use.
+                                    Real estate investing offers countless benefits. There are advantages for everyone, regardless of whether you want to invest in real estate full-time, or just on the side for a little extra income.
                                 </p>
 
                             </div>
@@ -60,7 +60,7 @@ function Blog() {
 
                                 </div>
                                 <p class="text-gray-700 text-base mb-4">
-                                    The On-demand apps are convenient to use. Learn the development process of an on-demand liquor delivery app with thousands of features and programs to use.
+                                    Real estate investing offers countless benefits. There are advantages for everyone, regardless of whether you want to invest in real estate full-time, or just on the side for a little extra income.
                                 </p>
 
                             </div>
@@ -94,7 +94,7 @@ function Blog() {
 
                                 </div>
                                 <p class="text-gray-700 text-base mb-4">
-                                    The On-demand apps are convenient to use. Learn the development process of an on-demand liquor delivery app with thousands of features and programs to use.
+                                    Real estate investing offers countless benefits. There are advantages for everyone, regardless of whether you want to invest in real estate full-time, or just on the side for a little extra income.
                                 </p>
 
                             </div>
@@ -122,7 +122,7 @@ function Blog() {
 
                                 </div>
                                 <p class="text-gray-700 text-base mb-4">
-                                    The On-demand apps are convenient to use. Learn the development process of an on-demand liquor delivery app with thousands of features and programs to use.
+                                    Real estate investing offers countless benefits. There are advantages for everyone, regardless of whether you want to invest in real estate full-time, or just on the side for a little extra income.
                                 </p>
 
                             </div>
@@ -177,7 +177,7 @@ function Blog() {
                             </div>
                             <div>
                                 <p className='text-lg font-semibold'>
-                                    How to Build-An On-Demand-Liquor Delivery App?
+                                    How to get a Landshare  Step-By-Step Guide
                                 </p>
                                 <span className='text-gray-500'>17 April 22</span>
                             </div>
@@ -189,7 +189,7 @@ function Blog() {
                             </div>
                             <div>
                                 <p className='text-lg font-semibold'>
-                                    How to Build-An On-Demand-Liquor Delivery App?
+                                    Why Real Estate-Backed Tokens Offer 
                                 </p>
                                 <span className='text-gray-500'>17 April 22</span>
                             </div>
@@ -201,7 +201,7 @@ function Blog() {
                             </div>
                             <div>
                                 <p className='text-lg font-semibold'>
-                                    How to Build-An On-Demand-Liquor Delivery App?
+                                    Benefits of Real Estate Investment
                                 </p>
                                 <span className='text-gray-500'>17 April 22</span>
                             </div>
@@ -213,7 +213,7 @@ function Blog() {
                             </div>
                             <div>
                                 <p className='text-lg font-semibold'>
-                                    How to Build-An On-Demand-Liquor Delivery App?
+                                    Benefits of Real Estate Investment
                                 </p>
                                 <span className='text-gray-500'>17 April 22</span>
                             </div>
