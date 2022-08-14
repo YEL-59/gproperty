@@ -1,5 +1,5 @@
 import React from "react";
-import AboutBlogimg from "../../assets/background/rexoit-about-image.png";
+
 import BlogImg from '../../assets/background/blog.jpg';
 import AboutGrid from "../../assets/background/grid-know-about.jpg";
 import Aboutback from '../../assets/background/Group-23620.png'

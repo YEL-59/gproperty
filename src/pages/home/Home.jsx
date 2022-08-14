@@ -1,7 +1,9 @@
 import React from 'react';
+import { useState } from 'react';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import Img1 from '../../assets/background/Neuropedia-1-e1638035373984.png'
-import Img2 from '../../assets/background/logo-stretched-wide-e1638035459893.png'
+import Final1 from '../../assets/service/building2.png'
+import Final from '../../assets/service/Untitled design.png'
 import Img3 from '../../assets/background/ftf-e1638035426166.png'
 import Img4 from '../../assets/background/fs_logo_300px.png'
 import brand1 from '../../assets/service/bsrm.png'
@@ -35,11 +37,15 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import Gallary1 from '../../assets/gallary/gallary1.jpg';
 import Gallary2 from '../../assets/gallary/gallery2.jpg';
 import Gallary3 from '../../assets/gallary/gallery3.png'
-import video1 from '../../assets/background/Video Footage Of Construction Site.mp4'
-import video2 from '../../assets/background/Pexels Videos 2406631.mp4'
-import video3 from '../../assets/background/pexels-alena-darmel-7646697.mp4'
+import { Link } from "react-router-dom";
+import { useForm } from 'react-hook-form';
 function Home() {
-
+	const {
+		register,
+		handleSubmit,
+		formState: { errors }
+	} = useForm();
+	const onSubmit = (values) => alert(JSON.stringify(values, null, 2));
 	const Service = [
 		{
 			id: 1,
@@ -91,9 +97,9 @@ function Home() {
 
 		<div className="bg-img w-full h-full" >
 			{/**<video src={video1} autoPlay loop muted></video> */}
-			
+
 			<div class=" flex justify-evenly xl:justify-center   gap-5  flex-col  lg:flex-row   p-2 lg:p-0 ">
-				<div className='flex flex-col  lg:mt-[10%]'>
+				<div className='flex flex-col  lg:mt-[10%] hidden md:block '>
 					<div className="  lg:p-0 ">
 						<h1 class="text-2xl lg:text-6xl font-bold lg:text-white lg:text-start  mb-5">
 							Buy Flat in Bashundhara</h1>
@@ -111,40 +117,51 @@ function Home() {
 						</div>
 					</div>
 				</div>
-
+				<div className='lg:hidden'>
+					<span class="inline-block w-full py-5 text-2xl leading-none text-center whitespace-nowrap shadow-lg align-baseline font-bold bg-blue-900 bg-opacity-80 text-white rounded">SAVE 40%</span>
+					<h1 class="text-2xl  font-bold lg:text-white lg:text-start mt-5 mb-5">
+						Buy Flat in  <span className='text-blue-900 '>Bashundhara</span> </h1>
+				</div>
 				<div className='  rounded-lg shadow-2xl p-5 xl:w-[32%]  lg:mt-14 lg:mb-10 bg-black bg-opacity-60 '>
 					<div className="  ">
-						<form>
+						<form action="https://formspree.io/f/xbjbjyqk"
+							method="POST" >
 							<h1 className=' text-2xl  font-bold text-white mb-2'>Build Your Dream Home With Us</h1>
 							<p className='max-w-lg text-white'>share your contact details with us. Our Property Experts will call You soon</p>
 
 
 							{/*-- Email input-- */}
 							<div className="mb-6 mt-5 text-white">
-								<label htmlFor="">FullName*</label>
+								<label htmlFor="FormControlInput">FullName*</label>
 								<input
 									type="text"
 									className="form-control block w-full px-4 py-2 text-lg  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
-									id="exampleFormControlInput2"
+									name="FormControlInput"
+									id="FormControlInput"
 									placeholder="Fullname"
+									required
 								/>
 							</div>
 							<div className="mb-6 text-white">
-								<label htmlFor="">Phone</label>
+								<label htmlFor="FormControlInput2">Phone</label>
 								<input
-									type="text"
+									type="number"
 									className="form-control block w-full px-4 py-2 text-lg  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
-									id="exampleFormControlInput2"
+									name="FormControlInput2"
+									id="FormControlInput2"
 									placeholder="Phone"
+									required
 								/>
 							</div>
 							<div className="mb-6 text-white">
-								<label htmlFor="">Email*</label>
+								<label htmlFor="FormControlInput3">Email*</label>
 								<input
 									type="text"
 									className="form-control block w-full px-4 py-2 text-lg  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
-									id="exampleFormControlInput2"
+									name="FormControlInput3"
+									id="FormControlInput3"
 									placeholder="Email"
+									required
 								/>
 							</div>
 
@@ -156,7 +173,7 @@ function Home() {
 							{/* Submit button */}
 							<div className="flex flex-col lg:flex-row  justify-center gap-2 mb-6">
 								<button
-									type="button"
+									type="submit"
 									className="inline-block px-9 py-2 w-full bg-blue-900 bg-opacity-80 text-white font-medium   rounded shadow-md "
 								>
 									SUBMIT
@@ -204,32 +221,32 @@ function Home() {
 			<div className='p-2 lg:p-0'>
 				<div className='flex flex-col justify-center items-center lg:flex-row mt-2 lg:mt-10 p-2 lg:p-0'>
 					<div>
-						<img src={phone} className='h-32' alt="" />
+						<img src={phone} className='h-32 hidden md:block' alt="" />
 					</div>
 					<div className='text-center'>
 
-						<h1 className='text-xl font-medium'>Call now to know how you can save <span class="inline-block py-2 px-2.5 leading-none shadow-lg text-center whitespace-nowrap align-baseline font-bold bg-blue-900 bg-opacity-80 text-white rounded">40%</span></h1>
-						<h1 className='text-2xl lg:text-6xl font-medium'>01748885444</h1>
-
+						<h1 className='text-sm lg:text-xl font-medium'>Call now to know how you can save <span class="inline-block py-2 px-2.5 leading-none shadow-lg text-center whitespace-nowrap align-baseline font-bold bg-blue-900 bg-opacity-80 text-white rounded">40%</span></h1>
+						
+						<a href="tel:+88001748885444p123"><h1 className='text-5xl  lg:text-6xl font-medium'>01748885444</h1></a>
 
 
 
 					</div>
 
 				</div>
-				<hr className=' bg-black mt-[50px] lg:mt-[55px]' /></div>
+			</div>
 
 
 
 
-
+			<hr className='h-[1px]  w-full bg-black mt-3  lg:mt-12 ' />
 			{/**text-md lg:text-2xl */}
-			<h1 className='text-2xl lg:text-2xl font-bold text-center  text-blue-900 text-opacity-70 mt-10'>WHY YOU SHOULD BUY FLAT WITH LAND SHARE?</h1>
-			<hr className='h-[1px] mx-auto w-full bg-black mt-2  lg:mt-12 ' />
+			<h1 className='text-xsm lg:text-2xl font-bold text-center  text-blue-900 text-opacity-70 mt-2 lg:mt-10'>WHY YOU SHOULD BUY FLAT WITH LAND SHARE?</h1>
+			<hr className='h-[1px]  w-full bg-black mt-3  lg:mt-12 ' />
 
-		
 
-			<div className='grid grid-cols-2 lg:grid-cols-3 gap-y-10 lg:gap-0 gap-5 justify-evenly items-center mt-20 p-2 lg:p-0 '>
+
+			<div className='grid grid-cols-2 lg:grid-cols-3 gap-y-10 gap-5 justify-center   mt-10 p-2 lg:p-0 '>
 				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none lg:w-80">
 					<div className='   flex justify-center mb-4 mt-4'>
 						<img src={community} alt="" />
@@ -251,7 +268,7 @@ function Home() {
 					<p className=" text-blue-900 text-opacity-70 text-sm lg:text-2xl  text-center font-bold ">
 						LAYOUT
 					</p>
-					<p className=" text-blue-900 text-opacity-70 text-sm lg:text-2xl lg:text-2xl text-center font-bold ">CUSTOMIZATION</p>
+					<p className=" text-blue-900 text-opacity-70 text-sm  lg:text-2xl text-center font-bold ">CUSTOMIZATION</p>
 
 
 				</div>
@@ -309,8 +326,8 @@ function Home() {
 
 
 				</div>
-				
-				
+
+
 
 
 			</div>
@@ -368,15 +385,18 @@ function Home() {
 			</div>
 		</div> */}
 
-			<hr className='h-[1px] mx-auto w-full bg-black mt-20 lg:mt-24 ' />
-			<h1 className='text-2xl lg:text-2xl font-bold text-center  text-blue-900 text-opacity-70 mt-10 mb-10'>FEATURED PRODUCT</h1>
+			<hr className='h-[1px] mx-auto w-full bg-black mt-5 lg:mt-24 ' />
+			<h1 className='text-2xl lg:text-2xl font-bold text-center  text-blue-900 text-opacity-70 mt-2 mb-2 lg:mt-10 lg:mb-10'>FEATURED PRODUCT</h1>
 			<hr className='h-[1px] mx-auto w-full bg-black  ' />
 
-			<div className='mt-14 flex flex-col lg:flex-row gap-14'>
-				
+			<div className='mt-14 flex flex-col lg:flex-row gap-14 '>
+
 				<div className='p-2 lg:p-0'>
 					<div>
-						<img src={building} className='rounded' alt="" />
+
+						<Link to="/projectdetails">
+							<img src={building} className='rounded ' alt="" />
+						</Link>
 					</div>
 					<div class="flex  gap-2 w-full  mt-5 ">
 						<button
@@ -426,19 +446,19 @@ function Home() {
 					<div class="flex justify-between    space-x-2 mt-5 ">
 						<button
 							type="button"
-							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+							class="inline-block  py-2.5  w-full bg-blue-800 bg-opacity-80 text-white text-xsm lg:text-[16px] font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
 							<LocalPhoneSharpIcon />	<a href="tel:+88001748885444p123">call Now</a>
 						</button>
 						<button
 							type="button"
-							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+							class="inline-block py-2.5  w-full bg-blue-800 bg-opacity-80 text-white font-medium  text-xsm lg:text-[16px] rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
 							<MailOutlineIcon />	<a href="mailto:genexpropertiesltd@gmail.com"> send mail</a>
 						</button>
 						<button
 							type="button"
-							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase  hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium text-xsm lg:text-[16px]  rounded shadow-md uppercase  hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
 							<WhatsappOutlinedIcon /><a href="https://web.whatsapp.com/">whatsapp</a>
 						</button>
@@ -448,22 +468,24 @@ function Home() {
 				</div>
 				<div className='p-2 lg:p-0'>
 					<div>
-						<img src={building} className='rounded' alt="" />
+						<Link to="/projectdetails">
+							<img src={Final} className='rounded ' alt="" />
+						</Link>
 					</div>
 					<div class="flex  gap-2 w-full  mt-5 ">
 						<button
 							type="button"
 							class="block w-full p-2  bg-blue-800 bg-opacity-80 text-white rounded  font-medium text-sm leading-tight uppercase  shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
-							<HouseSharpIcon />	10 shares left
+							<HouseSharpIcon />	all share complete
 						</button>
 
 					</div>
 					<div className='flex justify-between mt-3'>
 						<div className='flex flex-col justify-center '>
-							<h1 className='font-bold '>BDT <span className='text-2xl'>4500/sqft</span> </h1>
-							<p className='text-xl font-bold'>Genex Passioin Homes</p>
-							<p className='font-medium'>Block M, Bashundhara R/A</p>
+							<h1 className='font-bold '>BDT <span className='text-2xl'>5000/sqft</span> </h1>
+							<p className='text-xl font-bold'>Genex Green House</p>
+							<p className='font-medium'>Ploat 17,R4 s-15/3 Uttara</p>
 
 						</div>
 						<div>
@@ -471,7 +493,7 @@ function Home() {
 								type="button"
 								class="block px-6 mb-1   text-black rounded  lg:w-auto font-medium text-sm leading-tight  hover:text-white  hover:bg-blue-900 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 							>
-								<HotelIcon /> 4 Beds
+								<HotelIcon /> 3 Beds
 							</button>
 							<button
 								type="button"
@@ -483,7 +505,7 @@ function Home() {
 								type="button"
 								class="block px-6 mb-1   text-black rounded  lg:w-auto font-medium text-sm leading-tight hover:text-white  hover:bg-blue-900 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
 							>
-								<HouseSharpIcon /> 2550 sqft
+								<HouseSharpIcon /> 1250 sqft
 							</button>
 							<button
 								type="button"
@@ -498,21 +520,21 @@ function Home() {
 					<div class="flex justify-between    space-x-2 mt-5 ">
 						<button
 							type="button"
-							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white text-xsm lg:text-[16px] font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
 							<LocalPhoneSharpIcon />	<a href="tel:+88001748885444p123">call Now</a>
 						</button>
 						<button
 							type="button"
-							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white text-xsm lg:text-[16px] font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
 							<MailOutlineIcon />	<a href="mailto:genexpropertiesltd@gmail.com"> send mail</a>
 						</button>
 						<button
 							type="button"
-							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white text-xsm lg:text-[16px] font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
-							<WhatsappOutlinedIcon />	
+							<WhatsappOutlinedIcon />
 							<a href="https://web.whatsapp.com/">whatsapp</a>
 						</button>
 					</div>
@@ -521,22 +543,24 @@ function Home() {
 				</div>
 				<div className='p-2 lg:p-0'>
 					<div>
-						<img src={building} className='rounded' alt="" />
+						<Link to="/projectdetails">
+							<img src={Final1} className='rounded ' alt="" />
+						</Link>
 					</div>
 					<div class="flex  gap-2 w-full  mt-5 ">
 						<button
 							type="button"
 							class="block w-full p-2  bg-blue-800 bg-opacity-80 text-white rounded  font-medium text-sm leading-tight uppercase  shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
-							<HouseSharpIcon />	10 shares left
+							<HouseSharpIcon /> all share complete
 						</button>
 
 					</div>
 					<div className='flex justify-between mt-3'>
 						<div className='flex flex-col justify-center '>
-							<h1 className='font-bold '>BDT <span className='text-2xl'>4500/sqft</span> </h1>
-							<p className='text-xl font-bold'>Genex Passioin Homes</p>
-							<p className='font-medium'>Block M, Bashundhara R/A</p>
+							<h1 className='font-bold '>BDT <span className='text-2xl'>4800/sqft</span> </h1>
+							<p className='text-xl font-bold'>Genex Light Homes</p>
+							<p className='font-medium'>Ploat 11,R2/a s-a6/g Uttara</p>
 
 						</div>
 						<div>
@@ -571,19 +595,19 @@ function Home() {
 					<div class="flex justify-between    space-x-2 mt-5 ">
 						<button
 							type="button"
-							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium text-xsm lg:text-[16px]  rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
 							<LocalPhoneSharpIcon />	<a href="tel:+88001748885444">call Now</a>
 						</button>
 						<button
 							type="button"
-							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium text-xsm lg:text-[16px]  rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
 							<MailOutlineIcon />	 <a href="mailto:genexpropertiesltd@gmail.com"> send mail</a>
 						</button>
 						<button
 							type="button"
-							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium   rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+							class="inline-block  py-2.5 w-full bg-blue-800 bg-opacity-80 text-white font-medium text-xsm lg:text-[16px]  rounded shadow-md uppercase   hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 						>
 							<WhatsappOutlinedIcon /><a href="https://web.whatsapp.com/">whatsapp</a>
 						</button>
@@ -595,70 +619,70 @@ function Home() {
 			</div>
 
 
-			<hr className='h-[1px] mx-auto  bg-black mt-14 lg:mt-24 ' />
-			<h1 className=' text-xl lg:text-2xl font-bold text-center  text-blue-900 text-opacity-70 mt-8'>Buy Flat With Land Share In Just 4 Steps</h1>
-			<p className='text-center text-xsm lg:text-sm  mt-4'>Transparency is a big issue in real estate sector. Before investing your hrd earned</p>
+			<hr className='h-[1px] mx-auto  bg-black mt-5 lg:mt-24 ' />
+			<h1 className=' text-xl lg:text-2xl font-bold text-center  text-blue-900 text-opacity-70 mt-4 lg:mt-8'>Buy Flat With Land Share In Just 4 Steps</h1>
+			<p className='text-center text-xsm lg:text-sm mt-2 lg:mt-4'>Transparency is a big issue in real estate sector. Before investing your hrd earned</p>
 
-			<hr className='h-[1px] mx-auto  bg-black mt-5 lg:mb-5' />
-
-
+			<hr className='h-[1px] mx-auto  bg-black mt-2 lg:mt-5 lg:mb-5' />
 
 
 
-			<div className="grid grid-cols-2 lg:grid-cols-4 gap-y-6  gap-2 mt-20 mb-20 lg:mx-20 p-2 lg:p-0">
+
+
+			<div className="grid grid-cols-2 lg:grid-cols-4 gap-y-6  gap-2  mt-5 lg:mt-20 mb-2 lg:mb-20 lg:mx-20 p-2 lg:p-0">
 				{Service.map((x) => (
 					<div className=' p-2' key={x.id}>
 						<div className='flex justify-center items-center'>
 							<img src={x.ServiceImg} className='w-1/2' alt="" />
 						</div>
-						<h1 className='text-2xl font-bold text-center   text-blue-900 text-opacity-70 mt-5'>{x.ServiceTitle}</h1>
-						<h1 className='text-2xl font-bold text-center  text-blue-900 text-opacity-70 mb-2'>{x.Servicesubtitle}</h1>
-						<p className='text-center'>{x.ServiceBody}</p>
+						<h1 className='text-xsm lg:text-2xl font-bold text-center   text-blue-900 text-opacity-70 mt-5'>{x.ServiceTitle}</h1>
+						<h1 className='text-xsm lg:text-2xl font-bold text-center  text-blue-900 text-opacity-70 mb-2'>{x.Servicesubtitle}</h1>
+						<p className='text-xsm lg:text-center text-justify'>{x.ServiceBody}</p>
 					</div>
 				))}
 
 
 			</div>
 
-			<div className='lg:mx-20 mt-14 p-2 lg:p-0 '>
+			<div className='lg:mx-20 mt-5 lg:mt-14 p-2 lg:p-0 '>
 				<p className='text-lg lg:text-2xl font-bold px-3 border-l-8 border-red-500 mb-5  text-blue-900 text-opacity-70'>Associate & Suppliers</p>
 
 
-				<div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10  gap-5 p-2 ">
-					<div className='border-2  lg:h-1/1 lg:w-1/2 flex justify-center items-center '>
-						<img src={brand1}  alt="" />
+				<div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10  gap-5 p-2 lg:p-0">
+					<div className=' lg:h-1/1 lg:w-1/2 flex justify-center items-center '>
+						<img src={brand1} alt="" />
 
 					</div>
-					<div className='border-2 p-4 py-10  lg:h-1/1 lg:w-1/2 flex justify-center items-center'>
+					<div className=' p-4 py-10  lg:h-1/1 lg:w-1/2 flex justify-center items-center'>
 						<img src={brand2} alt="" />
 
 					</div>
-					<div className='border-2 p-4 py-10  lg:h-1/1 lg:w-1/2 flex justify-center items-center'>
+					<div className=' p-4 py-10  lg:h-1/1 lg:w-1/2 flex justify-center items-center'>
 						<img src={brand3} alt="" />
 
 					</div>
-					<div className='border-2 p-4 py-10 lg:h-1/1 lg:w-1/2 flex justify-center items-center  '>
+					<div className=' p-4 py-10 lg:h-1/1 lg:w-1/2 flex justify-center items-center  '>
 						<img src={brand4} alt="" />
 
 					</div>
-					<div className='border-2 p-4 py-10 lg:h-1/1 lg:w-1/2 flex justify-center items-center '>
+					<div className=' p-4 py-10 lg:h-1/1 lg:w-1/2 flex justify-center items-center hidden md:block'>
 						<img src={brand5} alt="" />
 
 					</div>
-					<div className='border-2 p-4 py-10  lg:h-1/1 lg:w-1/2 flex justify-center items-center'>
+					<div className=' p-4 py-10  lg:h-1/1 lg:w-1/2 flex justify-center items-center hidden md:block'>
 						<img src={brand6} alt="" />
 
 					</div>
-					<div className='border-2 p-4 py-10  lg:h-1/1 lg:w-1/2 flex justify-center items-center'>
+					<div className=' p-4 py-10  lg:h-1/1 lg:w-1/2 flex justify-center items-center hidden md:block'>
 						<img src={brand7} alt="" />
 
 					</div>
-					<div className='border-2 p-4 py-10 lg:h-1/1 lg:w-1/2 flex justify-center items-center  '>
+					<div className=' p-4 py-10 lg:h-1/1 lg:w-1/2 flex justify-center items-center  hidden md:block'>
 						<img src={brand8} alt="" />
 
 					</div>
 				</div>
-				
+
 			</div>
 			{/**<div className="flex flex-col lg:flex-row gap-5 p-2 ">
 					<div className='border-2 p-4  h-1/1 w-1/2 flex justify-center items-center '>
@@ -680,49 +704,12 @@ function Home() {
 				</div> */}
 
 
-			<div className='p-2 lg:p-0'><div className='flex flex-col lg:flex-row justify-around bg-blue-900 bg-opacity-90 p-5 py-20 border-l-8 border-red-700 mt-24 mb-24 lg:mx-20  '>
-				<div className='max-w-xl'>
-					<h1 className='lg:text-2xl text-white font-bold mb-2'>
-						Get Everything You Know in 1 click</h1>
-					<p className='text-white text-sm'>We have everything you need to run an efficient, profitable practice. We help you generate repeat business, increase customer conversions, and grow financially.</p>
-
-
-
-				</div>
-				<div>
-					<div class="flex justify-center lg:justify-start space-x-2 mt-5">
-						<button
-							type="button"
-							class="inline-block p-2 rounded bg-blue-600 text-white font-medium text-sm leading-tight uppercase  shadow-lg"
-						>
-							<a href="tel:+88001748885444p123"><LocalPhoneSharpIcon /></a>
-						</button>
-						<button
-							type="button"
-							class="inline-block p-2 rounded bg-blue-600 text-white font-medium text-sm leading-tight uppercase  shadow-lg"
-						>
-							<a href="https://web.whatsapp.com/"><WhatsappOutlinedIcon /></a>
-						</button>
-						<button
-							type="button"
-							class="inline-block p-2 rounded bg-blue-600 text-white font-medium text-sm leading-tight uppercase  shadow-lg"
-						>
-							<a href="mailto:genexpropertiesltd@gmail.com"><MailOutlineIcon /></a>
-						</button>
-						<button
-							type="button"
-							class="inline-block p-2 rounded bg-blue-600 text-white font-medium text-sm leading-tight uppercase  shadow-lg"
-						>
-							<a href="https://www.facebook.com/genexpropertiesltd"><FacebookIcon /></a>
-						</button>
-					</div>
-				</div>
-			</div></div>
 			
 
 
 
-			
+
+
 			{/**<div className='lg:mx-20 mt-14 p-2 lg:p-0 '>
 				<p className='text-lg lg:text-2xl font-bold px-3 border-l-8 border-red-500 mb-5  text-blue-900 text-opacity-70'>Why Choose Genex Properties ltd</p>
 
@@ -759,7 +746,7 @@ function Home() {
 
 				</div>
 			</div> */}
-			<div class=" flex justify-between gap-5  flex-col  lg:flex-row mt-14  lg:mt-28 lg:mx-20">
+			<div class=" flex justify-between gap-5  flex-col  lg:flex-row mt-5  lg:mt-28 lg:mx-20">
 				<div className="max-w-lg   p-4 lg:p-0 lg:text-start">
 					<div className='max-w-lg'>
 						<p className='text-lg lg:text-2xl font-bold px-3 border-l-8 border-red-500 mb-5'>Visit Our Youtube Chanel</p>
@@ -767,10 +754,10 @@ function Home() {
 						<div class="flex justify-center lg:justify-start space-x-2 mt-5">
 							<button
 								type="button"
-								class="inline-block px-6 py-2.5 bg-orange-700 rounded text-white font-medium text-sm leading-tight uppercase  shadow-md"
+								class="inline-block w-full px-6 py-2.5 bg-orange-700 rounded text-white font-medium text-sm leading-tight uppercase  shadow-md"
 							>
 								<a href="https://www.youtube.com/channel/UC_fbrk9-nA3pMjJHZKGuszA/featured"><ArrowCircleRightIcon />	Visit Our Chanel</a>
-								
+
 							</button>
 						</div>
 
@@ -792,17 +779,17 @@ function Home() {
 
 
 
-	
+
 			<h1 className='text-lg lg:text-2xl font-bold text-center  text-blue-900 text-opacity-70 mt-[5%] lg:mt-[-22%]'>Gallery</h1>
 			<hr className='h-[1px] mx-auto  bg-red-700  mt-2 lg:mt-5 mb-2 lg:mb-5' />
 
 
 			<div className="grid grid-cols-2 gap-5  p-2 lg:p-0 ">
 				<div>
-					<img src={Gallary1} className='rounded' alt="" />
+					<img src={Gallary1} className='rounded hidden md:block' alt="" />
 				</div>
 				<div>
-					<img src={Gallary1} className='rounded ' alt="" />
+					<img src={Gallary1} className='rounded hidden md:block' alt="" />
 				</div>
 			</div>
 			<div className="flex justify-center gap-5 p-2 lg:p-0">
@@ -811,55 +798,67 @@ function Home() {
 				</div>
 				<div>
 					<img src={Gallary1} className='rounded' alt="" />
+
 				</div>
 			</div>
 
 
 
-			<hr className='h-[1px] mx-auto  bg-red-700  mt-24   ' />
-			<h1 className='text-lg lg:text-2xl font-bold text-center  text-blue-900 text-opacity-70 mt-5 '>Get In Touch With Us</h1>
-			<hr className='h-[1px] mx-auto  bg-red-700  mt-2 lg:mt-5 mb-2 lg:mb-5' />
+			<hr className='h-[1px] mx-auto  bg-red-700 mt-5 lg:mt-24   hidden md:block' />
+			<h1 className='text-lg lg:text-2xl font-bold text-center  text-blue-900 text-opacity-70 mt-2 lg:mt-5 hidden md:block'>Get In Touch With Us</h1>
+			<hr className='h-[1px] mx-auto  bg-red-700  mt-2 lg:mt-5 mb-2 lg:mb-5 ' />
 			<div className="flex flex-col justify-center items-center lg:flex-row gap-5 p-2 lg:p-0">
 
-				
+
 				{/** <div className=''>
 					<img src={Bg2} alt="" />
 				</div>*/}
 
-				<div className='  rounded-lg shadow-2xl p-5   bg-black bg-opacity-70 mt-20'>
+				<div className='  rounded-lg shadow-2xl p-5   bg-black bg-opacity-70 lg:mt-20 hidden md:block'>
 					<div className="  ">
-						<form>
+						<form action="https://formspree.io/f/xbjbjyqk"
+							method="POST" onSubmit={handleSubmit(onSubmit)}>
 							<h1 className=' text-2xl  font-bold text-white mb-2'>Build Your Dream Home With Us</h1>
 							<p className='max-w-lg text-white'>share your contact details with us. Our Property Experts will call You soon</p>
 
 
 							{/*-- Email input-- */}
 							<div className="mb-6 mt-5 text-white">
-								<label htmlFor="">FullName*</label>
+								<label htmlFor="exampleFormControlInput">FullName*</label>
 								<input
 									type="text"
 									className="form-control block w-full px-4 py-2 text-lg  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
-									id="exampleFormControlInput2"
+									name="exampleFormControlInput"
+									id="exampleFormControlInput"
 									placeholder="Fullname"
+									required
+									
 								/>
+								
 							</div>
 							<div className="mb-6 text-white">
-								<label htmlFor="">Phone</label>
+								<label htmlFor="exampleFormControlInput2">Phone</label>
 								<input
-									type="text"
+									type="number"
 									className="form-control block w-full px-4 py-2 text-lg  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
+									name="exampleFormControlInput2"
 									id="exampleFormControlInput2"
 									placeholder="Phone"
+									required
 								/>
 							</div>
 							<div className="mb-6 text-white">
-								<label htmlFor="">Email*</label>
+								<label htmlFor="exampleFormControlInput3">Email*</label>
 								<input
-									type="text"
+									type="email"
 									className="form-control block w-full px-4 py-2 text-lg  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
-									id="exampleFormControlInput2"
+									name="exampleFormControlInput3"
+									id="exampleFormControlInput3"
 									placeholder="Email"
+									required
+									{...register("email", { required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i })}
 								/>
+								{errors.email && <span>Invalid email</span>}
 							</div>
 
 
@@ -870,7 +869,7 @@ function Home() {
 							{/* Submit button */}
 							<div className="flex flex-col lg:flex-row  justify-center gap-2 mb-6">
 								<button
-									type="button"
+									type="submit"
 									className="inline-block px-9 py-2 w-full bg-blue-900 bg-opacity-80 text-white font-medium   rounded shadow-md "
 								>
 									SUBMIT

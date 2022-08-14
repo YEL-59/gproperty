@@ -10,7 +10,7 @@ import DraftsIcon from '@mui/icons-material/Drafts';
 function Footer() {
 	const d = new Date();
 	return (
-		<div className="w-full bg-slate-300 bg-opacity-40  text-black  mt-20">
+		<div className="w-full bg-slate-300 bg-opacity-40  text-black  lg:mt-20">
 			<hr />
 			<div className="container mx-auto  p-5">
 				<div className="flex justify-between flex-col md:flex-row gap-5">
@@ -61,12 +61,12 @@ function Footer() {
 				
 
 			</div>
-			<div className="md:text-sm text-xsm  text-center bg-secondary w-full">
+			<div className=" text-xsm  text-center bg-secondary w-full">
 				<div className="flex flex-col lg:flex-row text-white  justify-evenly items-center">
 					<div className="text-center py-2">Copyright &copy; {d.getFullYear()} All right reserved </div>
-					<div className='flex items-center gap-5'>
-						<p className='text-lg   border-r-4 border-red-500 px-4 '>Term</p>
-						<p >privacy policy</p>
+					<div className='flex items-center gap-5 '>
+						<p className='text-xsm   border-r-4 border-red-500 px-4 '> <span className='text-red-500 text-lg'>T</span>erm & <span className='text-red-500 text-lg'>C</span>ondition</p>
+						<p className='text-xsm'><span className='text-red-500 text-lg'>P</span>rivacy <span className='text-red-500 text-lg'>P</span>olicy</p>
 					</div>
 					<div className="flex flex-wrap">
 						<img src={Logo} className='h-4  rounded' alt="" />

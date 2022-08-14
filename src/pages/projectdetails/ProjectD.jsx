@@ -2,6 +2,7 @@ import React from 'react'
 import LocalPhoneSharpIcon from '@mui/icons-material/LocalPhoneSharp';
 import building1 from '../../assets/service/Artboard 1.png'
 import building2 from '../../assets/service/Artboard 2.png'
+
 import Logo from '../../assets/logo/logo.png';
 import phone from '../../assets/icon/phone-cell.jpg'
 import PoolIcon from '@mui/icons-material/Pool';
@@ -15,8 +16,11 @@ import HotelIcon from '@mui/icons-material/Hotel';
 import BathtubSharpIcon from '@mui/icons-material/BathtubSharp';
 import HouseSharpIcon from '@mui/icons-material/HouseSharp';
 import CarRepairSharpIcon from '@mui/icons-material/CarRepairSharp';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import WhatsappOutlinedIcon from '@mui/icons-material/WhatsappOutlined';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import WallpaperIcon from '@mui/icons-material/Wallpaper';
+import AddRoadIcon from '@mui/icons-material/AddRoad';
+import HowToRegIcon from '@mui/icons-material/HowToReg';
+
 const ProjectD = () => {
     return (
         <div> <div className="container mx-auto">
@@ -24,7 +28,7 @@ const ProjectD = () => {
                 <div>
                     <img src={building1} className=' mt-4 rounded block mx-auto' alt="" />
                 </div>
-                <div className='w-[100%] lg:w-[50%]
+                <div className='w-[100%] lg:w-[50%] lg:mt-5
                  ' >
                     <div className='  rounded-lg shadow-2xl p-5 '>
                         <div className=" ">
@@ -106,7 +110,7 @@ const ProjectD = () => {
                                         type="button"
                                         className="inline-block  py-2.5 w-full bg-blue-900 bg-opacity-80 text-white font-medium   rounded shadow-md "
                                     >
-                                        <LocalPhoneSharpIcon />		Call Now
+                                        <LocalPhoneSharpIcon />	<a href="tel:+88001748885444p123">call Now</a>
                                     </button>
                                 </div>
 
@@ -123,12 +127,12 @@ const ProjectD = () => {
             <div className='p-2 lg:p-0'>
                 <div className='flex flex-col justify-center items-center lg:flex-row mt-2 lg:mt-10 p-2 lg:p-0'>
                     <div>
-                        <img src={phone} className='h-28' alt="" />
+                        <img src={phone} className='h-28 ' alt="" />
                     </div>
                     <div className='text-center'>
 
-                        <h1 className='text-xl font-medium'>Call now to know how you can save <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-blue-900 bg-opacity-80 text-white rounded">40%</span></h1>
-                        <h1 className='text-2xl lg:text-6xl font-medium'>01748885444</h1>
+                        <h1 className='text-sm lg:text-xl font-medium'>Call now to know how you can save <span class="inline-block py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-blue-900 bg-opacity-80 text-white rounded">40%</span></h1>
+                        <h1 className='text-5xl  lg:text-6xl font-medium'>01748885444</h1>
 
 
 
@@ -142,73 +146,68 @@ const ProjectD = () => {
             <div>
                 <hr className=' bg-black mt-[20px] lg:mt-[55px]' />
 
-                <h1 className='font-bold lg:text-2xl text-center mt-[20px]'> Buy Flat In Bashundhara Block</h1>
-                <hr className=' bg-black mt-[20px] lg:mt-[55px]' />
-                <div className="  flex flex-col lg:flex-row mt-14">
+                <h1 className='font-bold lg:text-2xl text-center text-blue-900 bg-opacity-80 mt-[20px]'> Buy Flat In Bashundhara Block</h1>
+                <hr className=' bg-black mt-[20px] lg:mt-[15px]' />
+                <div className="  flex flex-col lg:flex-row gap-10 mt-14">
                     <div>
-                        <img src={building2} className='h-[80%] rounded ' alt="" />
+                        <img src={building2} className='h-[100%] rounded w-full ' alt="" />
                     </div>
-                    <div className='flex flex-col justify-center  '>
+                    <div className='flex flex-col justify-center w-full '>
                         <button
                             type="button"
                             class=" px-6 mb-1 flex flex-row gap-2 items-center   rounded  lg:w-auto font-medium text-sm leading-tight    hover:bg-blue-900 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
                         >
-                            <HotelIcon sx={{ fontSize: 40 }} /> <span className='text-xl lg:text-4xl text-blue-900 hover:text-white'> 4 Beds</span>
+                            <LocationOnIcon sx={{ fontSize: 40 }} /> <span className='text-sm lg:text-4xl font-bold text-blue-900 hover:text-white'>Location:Bashundhara blockM</span>
                         </button>
                         <button
                             type="button"
                             class="flex flex-row gap-2 items-center px-6 mb-1     rounded  lg:w-auto font-medium text-sm leading-tight  hover:bg-blue-900 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
                         >
-                            <BathtubSharpIcon sx={{ fontSize: 40 }} /> <span className='text-xl lg:text-4xl text-blue-900 hover:text-white'> 4 Bath</span>
+                            <WallpaperIcon sx={{ fontSize: 40 }} /> <span className='text-sm lg:text-4xl font-bold text-blue-900 hover:text-white'>Land Size: 10 katha</span>
                         </button>
                         <button
                             type="button"
                             class="flex flex-row gap-2 items-center px-6 mb-1     rounded  lg:w-auto font-medium text-sm leading-tight   hover:bg-blue-900 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
                         >
-                            <HouseSharpIcon sx={{ fontSize: 40 }} /> <span className='text-xl lg:text-4xl text-blue-900 hover:text-white'> 2550 sqft</span>
+                            <HouseSharpIcon sx={{ fontSize: 40 }} /> <span className='text-sm lg:text-4xl text-blue-900 font-bold hover:text-white'>Building Type: B+G+9</span>
                         </button>
                         <button
                             type="button"
                             class="flex flex-row gap-2 items-center px-6     rounded  lg:w-auto font-medium text-sm leading-tight   hover:bg-blue-900 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
                         >
-                            <CarRepairSharpIcon sx={{ fontSize: 40 }} /> <span className='text-xl lg:text-4xl text-blue-900 hover:text-white'> 1 parking</span>
+                            <MeetingRoomIcon sx={{ fontSize: 40 }} /> <span className='text-sm lg:text-4xl text-blue-900 font-bold hover:text-white'>Flat Size: 2550 sqft</span>
                         </button>
                         <button
                             type="button"
                             class=" px-6 mb-1 flex flex-row gap-2 items-center   rounded  lg:w-auto font-medium text-sm leading-tight    hover:bg-blue-900 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                         >
-                            <PoolIcon sx={{ fontSize: 40 }} /> <span className='text-xl lg:text-4xl text-blue-900 hover:text-white'> swimming</span>
+                            <HouseSharpIcon sx={{ fontSize: 40 }} /> <span className='text-sm lg:text-4xl text-blue-900 font-bold hover:text-white'> unit:18</span>
                         </button>
                         <button
                             type="button"
                             class=" px-6 mb-1 flex flex-row gap-2 items-center  text-black rounded  lg:w-auto font-medium text-sm leading-tight    hover:bg-blue-900 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                         >
-                            <YardIcon sx={{ fontSize: 40 }} /> <span className='text-xl lg:text-4xl text-blue-900 hover:text-white'> Gardening</span>
+                            <CarRepairSharpIcon sx={{ fontSize: 40 }} /> <span className='text-sm lg:text-4xl text-blue-900 font-bold hover:text-white'> Parking: 26</span>
                         </button>
                         <button
                             type="button"
                             class=" px-6 mb-1 flex flex-row gap-2 items-center  text-black rounded  lg:w-auto font-medium text-sm leading-tight   hover:bg-blue-900 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                         >
-                            <OutdoorGrillIcon sx={{ fontSize: 40 }} /> <span className='text-xl lg:text-4xl text-blue-900 hover:text-white'> BBq</span>
+                            <YardIcon sx={{ fontSize: 40 }} /> <span className='text-sm lg:text-4xl text-blue-900 font-bold hover:text-white'> Face: South</span>
                         </button>
                         <button
                             type="button"
                             class=" px-6 mb-1 flex flex-row gap-2 items-center  text-black rounded  lg:w-auto font-medium text-sm leading-tight   hover:bg-blue-900 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                         >
-                            <MeetingRoomIcon sx={{ fontSize: 40 }} /> <span className='text-xl lg:text-4xl text-blue-900 hover:text-white'> Conference room</span>
+                            <AddRoadIcon sx={{ fontSize: 40 }} /> <span className='text-sm lg:text-4xl text-blue-900 font-bold hover:text-white'> Road Size:25 Feet</span>
                         </button>
                         <button
                             type="button"
                             class=" px-6 mb-1 flex flex-row gap-2 items-center  text-black rounded  lg:w-auto font-medium text-sm leading-tight    hover:bg-blue-900 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                         >
-                            <FitnessCenterIcon sx={{ fontSize: 40 }} /> <span className='text-xl lg:text-4xl text-blue-900 hover:text-white'> Gym</span>
+                            <HowToRegIcon sx={{ fontSize: 40 }} /> <span className='text-sm lg:text-4xl text-blue-900 font-bold hover:text-white'>RegistrationDate:August2022</span>
                         </button>
-                        <button
-                            type="button"
-                            class=" px-6 mb-1 flex gap-5 flex-row  items-center   rounded  lg:w-auto font-medium text-sm leading-tight    hover:bg-blue-900 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-                        >
-                            <MosqueIcon sx={{ fontSize: 40 }} /> <span className='text-xl lg:text-4xl text-blue-900 hover:text-white'> Prayer Zone</span>
-                        </button>
+                        
                     </div>
                   
                 </div>
@@ -220,13 +219,13 @@ const ProjectD = () => {
             <h1 className='font-bold lg:text-2xl text-center mt-[20px]'> Features and Amenities</h1>
             <hr className=' bg-black mt-[20px] ' />
 
-            <div className='flex flex-col lg:flex-row gap-5 lg:gap-0 justify-evenly mt-14 '>
-                <div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white w-80">
+            <div className='grid grid-cols-2 lg:grid-cols-3 gap-10 p-2 mt-14 '>
+                <div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white lg:w-80">
                     <div className='flex justify-center mb-11 mt-4'>
                         <PoolIcon sx={{ fontSize: 80 }} />
                     </div>
 
-                    <p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold  ">
+                    <p className=" text-blue-900 text-opacity-70 text-sm lg:text-2xl text-center font-bold  ">
                         swimmingpool
                     </p>
 
@@ -236,12 +235,12 @@ const ProjectD = () => {
 
 
 
-                <div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white w-80">
+                <div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white lg:w-80">
                     <div className='flex justify-center mb-11 mt-4'>
                         <YardIcon sx={{ fontSize: 80 }} />
                     </div>
 
-                    <p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold  ">
+                    <p className=" text-blue-900 text-opacity-70 text-sm lg:text-2xl text-center font-bold  ">
                         Gardening
                     </p>
 
@@ -249,7 +248,7 @@ const ProjectD = () => {
 
                 </div>
 
-                <div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white w-80">
+                <div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white lg:w-80">
                     <div className='flex justify-center mb-11 mt-4'>
                         <OutdoorGrillIcon sx={{ fontSize: 80 }} />
                     </div>
@@ -260,17 +259,12 @@ const ProjectD = () => {
 
 
                 </div>
-
-
-            </div>
-
-            <div className='flex flex-col lg:flex-row gap-5 lg:gap-0 justify-evenly mt-24 '>
-                <div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white w-80">
+                <div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white lg:w-80">
                     <div className='flex justify-center mb-11 mt-4'>
                         <MeetingRoomIcon sx={{ fontSize: 80 }} />
                     </div>
 
-                    <p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold  ">
+                    <p className=" text-blue-900 text-opacity-70 text-sm lg:text-2xl text-center font-bold  ">
                         Conference Room
                     </p>
 
@@ -278,12 +272,12 @@ const ProjectD = () => {
 
                 </div>
 
-                <div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white w-80">
+                <div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white lg:w-80">
                     <div className='flex justify-center mb-11 mt-4'>
                         <FitnessCenterIcon sx={{ fontSize: 80 }} />
                     </div>
 
-                    <p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold  ">
+                    <p className=" text-blue-900 text-opacity-70 text-sm lg:text-2xl text-center font-bold  ">
                         GYM
                     </p>
 
@@ -291,12 +285,12 @@ const ProjectD = () => {
 
                 </div>
 
-                <div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white w-80">
+                <div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white lg:w-80">
                     <div className='flex justify-center mb-11 mt-4'>
                         <MosqueIcon sx={{ fontSize: 80 }} />
                     </div>
 
-                    <p className=" text-blue-900 text-opacity-70 text-2xl text-center font-bold  ">
+                    <p className=" text-blue-900 text-opacity-70 text-sm lg:text-2xl text-center font-bold  ">
                         Prayer Zone
                     </p>
 
@@ -304,10 +298,11 @@ const ProjectD = () => {
 
                 </div>
 
-
             </div>
+
+          
         </div>
-            <hr className=' bg-black mt-14' />
+            <hr className=' bg-black lg:mt-14' />
 
             <h1 className='font-bold lg:text-2xl text-center mt-[20px]'> Features and Amenities</h1>
             <hr className=' bg-black mt-[20px] ' />
@@ -390,18 +385,18 @@ const ProjectD = () => {
 
             <div className="flex justify-center gap-5 mb-5 p-2 lg:p-0 ">
                 <div>
-                    <img src={building} className='rounded' alt="" />
+                    <img src={building} className='rounded mx-auto' alt="" />
                 </div>
                 <div>
-                    <img src={building} className='rounded' alt="" />
+                    <img src={building} className='rounded mx-auto' alt="" />
                 </div>
             </div>
             <div className="flex justify-center gap-5 p-2 lg:p-0">
                 <div>
-                    <img src={building} className='rounded' alt="" />
+                    <img src={building} className='rounded ' alt="" />
                 </div>
                 <div>
-                    <img src={building} className='rounded' alt="" />
+                    <img src={building} className='rounded ' alt="" />
                 </div>
             </div></div>
     )
