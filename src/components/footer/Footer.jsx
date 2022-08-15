@@ -1,6 +1,5 @@
 import React from 'react';
-import Service1 from '../../assets/service/HIPAA-Compliance-Verification-Seal-of-compliance-e1637986779983.png'
-import Service2 from '../../assets/service/LL1-ouai0puf0e37giyah65pk5cx09ux9gslu336ob98u8.png'
+
 import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork';
 import Logo from '../../assets/logo/logo.png';
 import logo from '../../assets/logo/logo-removebg-preview.png'
@@ -20,24 +19,24 @@ function Footer() {
 						<div>Genex Properties Ltd. offers flat at 40% less cost of current market price with luxurious facilities. Build Your Dream Home With Us.</div>
 					</div>
 
-					<ul className="md:w-[300px] list-disc">
+					<ul className="md:w-[300px]  font-medium ">
 						<h1 className="md:text-lg text-md font-bold mb-5"> TOP FEATURES</h1>
 
-						<li className="md:text-sm text-xsm mb-2">
-							Home</li>
+						<li className="md:text-sm text-xsm mb-2 hover:text-blue-900">
+							- Home</li>
 
 
 
 
-						<li className="md:text-sm text-xsm mb-2">Product Details</li>
+						<li className="md:text-sm text-xsm mb-2 hover:text-blue-900">- Product Details</li>
 
 
-						<li className="md:text-sm text-xsm mb-2">
-							Career</li>
-						<li className="md:text-sm text-xsm mb-2">
-							About us</li>
-						<li className="md:text-sm text-xsm mb-2">
-							contact us</li>
+						<li className="md:text-sm text-xsm mb-2 hover:text-blue-900">
+							- Career</li>
+						<li className="md:text-sm text-xsm mb-2 hover:text-blue-900">
+							- About us</li>
+						<li className="md:text-sm text-xsm mb-2 hover:text-blue-900">
+							- contact us</li>
 
 					</ul>
 					<ul className="md:w-[300px]">
@@ -50,11 +49,14 @@ function Footer() {
 						<span className="flex items-center gap-2">
 							<DraftsIcon />
 							<li className="md:text-sm text-xsm mb-2">
-								genex@gmail.com</li>
+
+								genexpropertiesltd@gmail.com
+								
+								</li>
 						</span>
 						<span className="flex items-center gap-2">
 							<PhoneEnabledIcon />
-							<li className="md:text-sm text-xsm mb-2">+8801888042370</li>
+							<li className="md:text-sm text-xsm mb-2">01748885444</li>
 						</span>
 					</ul>
 				</div>
@@ -63,14 +65,14 @@ function Footer() {
 			</div>
 			<div className=" text-xsm  text-center bg-secondary w-full">
 				<div className="flex flex-col lg:flex-row text-white  justify-evenly items-center">
-					<div className="text-center py-2">Copyright &copy; {d.getFullYear()} All right reserved </div>
+					<div className="text-center py-2">Copyright &copy; {d.getFullYear()} All right reserved <a href="https://github.com/YEL-59">.</a> </div>
 					<div className='flex items-center gap-5 '>
-						<p className='text-xsm   border-r-4 border-red-500 px-4 '> <span className='text-red-500 text-lg'>T</span>erm & <span className='text-red-500 text-lg'>C</span>ondition</p>
+						<p className='text-xsm   border-r-2 border-red-500 px-4 '> <span className='text-red-500 text-lg'>T</span>erm & <span className='text-red-500 text-lg'>C</span>ondition</p>
 						<p className='text-xsm'><span className='text-red-500 text-lg'>P</span>rivacy <span className='text-red-500 text-lg'>P</span>olicy</p>
 					</div>
-					<div className="flex flex-wrap">
+					<div className="flex flex-wrap ">
 						<img src={Logo} className='h-4  rounded' alt="" />
-						
+						<a href="https://github.com/YEL-59">.</a>
 					</div>
 				</div>
 

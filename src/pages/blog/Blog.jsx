@@ -43,15 +43,15 @@ function Blog() {
                                 <img class="rounded-t-lg" src={BlogImg} alt="" />
                             </a>
                             <div class="p-6 bg-[#f4f8f9]">
-                                <h5 class=" text-gray-900 text-2xl font-semibold mb-2">Why you choose land share?</h5>
+                                <h5 class=" text-gray-900 text-2xl font-semibold mb-2">Landshare Roadmap: Q4 2021 — Q2 2022?</h5>
                                 <div className='flex items-center gap-4 mt-5 mb-5 text-sm text-gray-500'>
                                     <div >
                                         <CalendarMonthIcon sx={{ fontSize: 17 }} />
-                                        <span className='px-1'>12April,22</span>
+                                        <span className='px-1'>12August,21</span>
                                     </div>
                                     <div>
                                         <PersonIcon sx={{ fontSize: 17 }} />
-                                        <span className='px-1'>Afridi</span>
+                                        <span className='px-1'>Mehedi</span>
                                     </div>
                                     <div>
                                         <IntegrationInstructionsIcon sx={{ fontSize: 17 }} />
@@ -60,7 +60,7 @@ function Blog() {
 
                                 </div>
                                 <p class="text-gray-700 text-base mb-4">
-                                    Real estate investing offers countless benefits. There are advantages for everyone, regardless of whether you want to invest in real estate full-time, or just on the side for a little extra income.
+                                    Our updated roadmap is here!As we continue to develop our upcoming features and expand our partnerships throughout the BSC ecosystem, we wanted to provide .
                                 </p>
 
                             </div>
@@ -77,15 +77,15 @@ function Blog() {
                                 <img class="rounded-t-lg" src={BlogImg} alt="" />
                             </a>
                             <div class="p-6 bg-[#f4f8f9]">
-                                <h5 class=" text-gray-900 text-2xl font-semibold mb-2">Why you choose land share?</h5>
+                                <h5 class=" text-gray-900 text-2xl font-semibold mb-2">Home Care Tips for Property Ownership.</h5>
                                 <div className='flex items-center gap-4 mt-5 mb-5 text-sm text-gray-500'>
                                     <div>
                                         <CalendarMonthIcon sx={{ fontSize: 17 }} />
-                                        <span className='px-1'>12April,22</span>
+                                        <span className='px-1'>10june,22</span>
                                     </div>
                                     <div>
                                         <PersonIcon sx={{ fontSize: 17 }} />
-                                        <span className='px-1'>Afridi</span>
+                                        <span className='px-1'>Bin Karim</span>
                                     </div>
                                     <div>
                                         <IntegrationInstructionsIcon sx={{ fontSize: 17 }} />
@@ -94,7 +94,7 @@ function Blog() {
 
                                 </div>
                                 <p class="text-gray-700 text-base mb-4">
-                                    Real estate investing offers countless benefits. There are advantages for everyone, regardless of whether you want to invest in real estate full-time, or just on the side for a little extra income.
+                                    After buying a flat or house, it is necessary to know the protection method well to protect it. With proper use of protection methods, you will be able to take care of your preferred home .
                                 </p>
 
                             </div>
@@ -105,15 +105,15 @@ function Blog() {
                                 <img class="rounded-t-lg" src={BlogImg} alt="" />
                             </a>
                             <div class="p-6 bg-[#f4f8f9]">
-                                <h5 class=" text-gray-900 text-2xl font-semibold mb-2">Why you choose land share?</h5>
+                                <h5 class=" text-gray-900 text-2xl font-semibold mb-2">Land Law in Bangladesh – You need to know Rules </h5>
                                 <div className='flex items-center gap-4 mt-5 mb-5 text-sm text-gray-500'>
                                     <div>
                                         <CalendarMonthIcon sx={{ fontSize: 17 }} />
-                                        <span className='px-1'>12April,22</span>
+                                        <span className='px-1'>12May,22</span>
                                     </div>
                                     <div>
                                         <PersonIcon sx={{ fontSize: 17 }} />
-                                        <span className='px-1'>Afridi</span>
+                                        <span className='px-1'>Sifat</span>
                                     </div>
                                     <div>
                                         <IntegrationInstructionsIcon sx={{ fontSize: 17 }} />
@@ -122,7 +122,7 @@ function Blog() {
 
                                 </div>
                                 <p class="text-gray-700 text-base mb-4">
-                                    Real estate investing offers countless benefits. There are advantages for everyone, regardless of whether you want to invest in real estate full-time, or just on the side for a little extra income.
+                                    This post in will clarify in subtleties the Land Law in Bangladesh – Rules and Regulations, everything about property law that you have to know .
                                 </p>
 
                             </div>
@@ -238,21 +238,21 @@ function Blog() {
 				<nav aria-label="Page navigation example">
 					<ul class="flex list-style-none">
 						<li class="page-item"><a
-							class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 focus:shadow-none"
+							class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300  text-gray-800 hover:text-gray-800 focus:shadow-none"
 							href="#" aria-label="Previous">
 							<span aria-hidden="true">&laquo;</span>
 						</a></li>
 						<li class="page-item"><a
-							class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+							class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300  text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
 							href="#">1</a></li>
 						<li class="page-item"><a
-							class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+							class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300  text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
 							href="#">2</a></li>
 						<li class="page-item"><a
-							class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+							class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300  text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
 							href="#">3</a></li>
 						<li class="page-item"><a
-							class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+							class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300  text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
 							href="#" aria-label="Next">
 							<span aria-hidden="true">&raquo;</span>
 						</a></li>

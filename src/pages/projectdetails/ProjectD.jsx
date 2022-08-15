@@ -209,7 +209,7 @@ const ProjectD = () => {
                         </button>
                         
                     </div>
-                  
+                    
                 </div>
 
 
@@ -220,7 +220,7 @@ const ProjectD = () => {
             <hr className=' bg-black mt-[20px] ' />
 
             <div className='grid grid-cols-2 lg:grid-cols-3 gap-10 p-2 mt-14 '>
-                <div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white lg:w-80">
+                <div className="block mx-auto p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white lg:w-80">
                     <div className='flex justify-center mb-11 mt-4'>
                         <PoolIcon sx={{ fontSize: 80 }} />
                     </div>
@@ -235,7 +235,7 @@ const ProjectD = () => {
 
 
 
-                <div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white lg:w-80">
+                <div className="block mx-auto p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white lg:w-80">
                     <div className='flex justify-center mb-11 mt-4'>
                         <YardIcon sx={{ fontSize: 80 }} />
                     </div>
@@ -248,7 +248,7 @@ const ProjectD = () => {
 
                 </div>
 
-                <div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white lg:w-80">
+                <div className="block mx-auto p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white lg:w-80">
                     <div className='flex justify-center mb-11 mt-4'>
                         <OutdoorGrillIcon sx={{ fontSize: 80 }} />
                     </div>
@@ -259,7 +259,7 @@ const ProjectD = () => {
 
 
                 </div>
-                <div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white lg:w-80">
+                <div className="block mx-auto p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white lg:w-80">
                     <div className='flex justify-center mb-11 mt-4'>
                         <MeetingRoomIcon sx={{ fontSize: 80 }} />
                     </div>
@@ -272,7 +272,7 @@ const ProjectD = () => {
 
                 </div>
 
-                <div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white lg:w-80">
+                <div className="block mx-auto p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white lg:w-80">
                     <div className='flex justify-center mb-11 mt-4'>
                         <FitnessCenterIcon sx={{ fontSize: 80 }} />
                     </div>
@@ -285,7 +285,7 @@ const ProjectD = () => {
 
                 </div>
 
-                <div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white lg:w-80">
+                <div className="block mx-auto p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white lg:w-80">
                     <div className='flex justify-center mb-11 mt-4'>
                         <MosqueIcon sx={{ fontSize: 80 }} />
                     </div>

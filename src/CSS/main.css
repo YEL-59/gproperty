@@ -23,7 +23,10 @@
   background: rgb(48, 48, 196);
   opacity: 80%;
 }
-
+.custom-img {
+  background-image: url("../assets/background/contact-us-image.png");
+  height: 120vh;
+}
 
 
 

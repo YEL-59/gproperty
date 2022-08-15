@@ -1,11 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
-import Img1 from '../../assets/background/Neuropedia-1-e1638035373984.png'
+
 import Final1 from '../../assets/service/building2.png'
 import Final from '../../assets/service/Untitled design.png'
-import Img3 from '../../assets/background/ftf-e1638035426166.png'
-import Img4 from '../../assets/background/fs_logo_300px.png'
+
 import brand1 from '../../assets/service/bsrm.png'
 import brand2 from '../../assets/service/brac-bank.png'
 import brand3 from '../../assets/service/Prime_Bank_Logo.png'
@@ -14,12 +13,11 @@ import brand5 from '../../assets/service/ksrm-logo.png';
 import brand6 from '../../assets/service/crown.png';
 import brand7 from '../../assets/service/aks.jpg';
 import brand8 from '../../assets/service/rak.png';
-import AlarmOnIcon from '@mui/icons-material/AlarmOn';
-import Bg2 from '../../assets/background/bg2.png'
+
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LocalPhoneSharpIcon from '@mui/icons-material/LocalPhoneSharp';
 import phone from '../../assets/icon/phone-cell.jpg'
-import Bg from '../../assets/background/bg.jpg'
+
 import main from '../../CSS/main.css'
 import clock from '../../assets/icon/clock.gif'
 import virus from '../../assets/icon/virus.gif'
@@ -33,19 +31,24 @@ import BathtubSharpIcon from '@mui/icons-material/BathtubSharp';
 import HouseSharpIcon from '@mui/icons-material/HouseSharp';
 import CarRepairSharpIcon from '@mui/icons-material/CarRepairSharp';
 import WhatsappOutlinedIcon from '@mui/icons-material/WhatsappOutlined';
-import FacebookIcon from '@mui/icons-material/Facebook';
+
 import Gallary1 from '../../assets/gallary/gallary1.jpg';
 import Gallary2 from '../../assets/gallary/gallery2.jpg';
 import Gallary3 from '../../assets/gallary/gallery3.png'
 import { Link } from "react-router-dom";
 import { useForm } from 'react-hook-form';
 function Home() {
+	{/**This part is for form validation only for email fiels .....start*/ }
+
 	const {
 		register,
 		handleSubmit,
 		formState: { errors }
 	} = useForm();
-	const onSubmit = (values) => alert(JSON.stringify(values, null, 2));
+	
+
+	{/**This part is for form validation .....end const onSubmit = (values) => alert(JSON.stringify(values, null, 2));*/ }
+
 	const Service = [
 		{
 			id: 1,
@@ -94,13 +97,14 @@ function Home() {
 	]
 
 	return <div>
-
+		{/**hero div ...start */}
 		<div className="bg-img w-full h-full" >
 			{/**<video src={video1} autoPlay loop muted></video> */}
 
 			<div class=" flex justify-evenly xl:justify-center   gap-5  flex-col  lg:flex-row   p-2 lg:p-0 ">
+				{/**left flex..start */}
 				<div className='flex flex-col  lg:mt-[10%] hidden md:block '>
-					<div className="  lg:p-0 ">
+					<div className="p-2  lg:p-0 ">
 						<h1 class="text-2xl lg:text-6xl font-bold lg:text-white lg:text-start  mb-5">
 							Buy Flat in Bashundhara</h1>
 
@@ -117,17 +121,22 @@ function Home() {
 						</div>
 					</div>
 				</div>
+				{/**show only small device... */}
 				<div className='lg:hidden'>
 					<span class="inline-block w-full py-5 text-2xl leading-none text-center whitespace-nowrap shadow-lg align-baseline font-bold bg-blue-900 bg-opacity-80 text-white rounded">SAVE 40%</span>
 					<h1 class="text-2xl  font-bold lg:text-white lg:text-start mt-5 mb-5">
 						Buy Flat in  <span className='text-blue-900 '>Bashundhara</span> </h1>
 				</div>
+				{/**left flex...end */}
+
+				{/**right flex..start */}
 				<div className='  rounded-lg shadow-2xl p-5 xl:w-[32%]  lg:mt-14 lg:mb-10 bg-black bg-opacity-60 '>
 					<div className="  ">
+						{/**adding 3rd party api from collecting form data */}
 						<form action="https://formspree.io/f/xbjbjyqk"
 							method="POST" >
 							<h1 className=' text-2xl  font-bold text-white mb-2'>Build Your Dream Home With Us</h1>
-							<p className='max-w-lg text-white'>share your contact details with us. Our Property Experts will call You soon</p>
+							<p className='max-w-lg text-white'>Share your contact details with us. Our Property Experts will call You soon.</p>
 
 
 							{/*-- Email input-- */}
@@ -143,7 +152,7 @@ function Home() {
 								/>
 							</div>
 							<div className="mb-6 text-white">
-								<label htmlFor="FormControlInput2">Phone</label>
+								<label htmlFor="FormControlInput2">Phone*</label>
 								<input
 									type="number"
 									className="form-control block w-full px-4 py-2 text-lg  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
@@ -182,20 +191,20 @@ function Home() {
 									type="button"
 									className="inline-block px-9 py-2 w-full bg-blue-900 bg-opacity-80 text-white font-medium   rounded shadow-md "
 								>
-									<LocalPhoneSharpIcon />		<a href="tel:+88001748885444p123">call Now</a>
+									<LocalPhoneSharpIcon />		<a href="tel:+88001748885444p123">CALL NOW</a>
 								</button>
 							</div>
 
-							{/* 2 column grid layout for inline styling */}
+
 
 						</form>
 					</div>
 				</div>
-				<div>
-
-				</div>
+				{/**right flex..end */}
 			</div>
 		</div>
+		{/**hero div ...end */}
+
 		<div className='container mx-auto '>
 
 
@@ -218,6 +227,7 @@ function Home() {
 
 
 		</div> */}
+			{/**2ND SECTION... START */}
 			<div className='p-2 lg:p-0'>
 				<div className='flex flex-col justify-center items-center lg:flex-row mt-2 lg:mt-10 p-2 lg:p-0'>
 					<div>
@@ -226,7 +236,7 @@ function Home() {
 					<div className='text-center'>
 
 						<h1 className='text-sm lg:text-xl font-medium'>Call now to know how you can save <span class="inline-block py-2 px-2.5 leading-none shadow-lg text-center whitespace-nowrap align-baseline font-bold bg-blue-900 bg-opacity-80 text-white rounded">40%</span></h1>
-						
+
 						<a href="tel:+88001748885444p123"><h1 className='text-5xl  lg:text-6xl font-medium'>01748885444</h1></a>
 
 
@@ -235,7 +245,7 @@ function Home() {
 
 				</div>
 			</div>
-
+			{/**2ND SECTION... END */}
 
 
 
@@ -245,9 +255,9 @@ function Home() {
 			<hr className='h-[1px]  w-full bg-black mt-3  lg:mt-12 ' />
 
 
-
-			<div className='grid grid-cols-2 lg:grid-cols-3 gap-y-10 gap-5 justify-center   mt-10 p-2 lg:p-0 '>
-				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none lg:w-80">
+			{/**grid...start */}
+			<div className='grid grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-0  justify-center   mt-10 p-2 lg:p-0 '>
+				<div className="block mx-auto p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none lg:w-80">
 					<div className='   flex justify-center mb-4 mt-4'>
 						<img src={community} alt="" />
 					</div>
@@ -260,7 +270,7 @@ function Home() {
 
 				</div>
 
-				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none  lg:w-80">
+				<div className="block mx-auto p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none  lg:w-80">
 					<div className='flex justify-center mb-4 mt-4'>
 						<img src={custom} alt="" />
 					</div>
@@ -273,7 +283,7 @@ function Home() {
 
 				</div>
 
-				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none  lg:w-80">
+				<div className="block mx-auto p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none  lg:w-80">
 					<div className='flex justify-center mb-4 mt-4'>
 						<img src={cm1} alt="" />
 					</div>
@@ -286,7 +296,7 @@ function Home() {
 
 				</div>
 
-				<div className=" block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none lg:mt-36  lg:w-80">
+				<div className=" block mx-auto p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none lg:mt-36  lg:w-80">
 					<div className='flex justify-center mb-4 mt-4'>
 						<img src={virus} alt="" />
 
@@ -300,7 +310,7 @@ function Home() {
 
 				</div>
 
-				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none lg:mt-36 lg:w-80">
+				<div className="block mx-auto p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none lg:mt-36 lg:w-80">
 					<div className='flex justify-center mb-4 mt-4'>
 
 						<img src={clock} alt="" />
@@ -314,7 +324,7 @@ function Home() {
 
 				</div>
 
-				<div className="block p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none lg:mt-40 lg:w-80">
+				<div className="block mx-auto p-6 border-b-2 hover:rounded hover:border hover:border-b-4 border-blue-900 bg-opacity-80 bg-white shadow-lg lg:shadow-none lg:mt-40 lg:w-80">
 					<div className='flex justify-center mb-11 mt-4'>
 						<img src={Zero} className='h-14 lg:h-40' alt="" />
 					</div>
@@ -331,7 +341,7 @@ function Home() {
 
 
 			</div>
-
+			{/**grid...end*/}
 
 			{/**<div class=" flex justify-evenly gap-5  flex-col  lg:flex-row mt-14  lg:mt-28 lg:mx-20">
 			<div className="flex flex-col gap-2 p-2 lg:p-0">
@@ -393,7 +403,7 @@ function Home() {
 
 				<div className='p-2 lg:p-0'>
 					<div>
-
+						{/**connect to img to another page */}
 						<Link to="/projectdetails">
 							<img src={building} className='rounded ' alt="" />
 						</Link>
@@ -485,7 +495,7 @@ function Home() {
 						<div className='flex flex-col justify-center '>
 							<h1 className='font-bold '>BDT <span className='text-2xl'>5000/sqft</span> </h1>
 							<p className='text-xl font-bold'>Genex Green House</p>
-							<p className='font-medium'>Ploat 17,R4 s-15/3 Uttara</p>
+							<p className='font-medium'>Plot 17,R4 sector-15/3 Uttara</p>
 
 						</div>
 						<div>
@@ -560,7 +570,7 @@ function Home() {
 						<div className='flex flex-col justify-center '>
 							<h1 className='font-bold '>BDT <span className='text-2xl'>4800/sqft</span> </h1>
 							<p className='text-xl font-bold'>Genex Light Homes</p>
-							<p className='font-medium'>Ploat 11,R2/a s-a6/g Uttara</p>
+							<p className='font-medium'>Plot 11,2/a sector-16/g Uttara</p>
 
 						</div>
 						<div>
@@ -621,7 +631,7 @@ function Home() {
 
 			<hr className='h-[1px] mx-auto  bg-black mt-5 lg:mt-24 ' />
 			<h1 className=' text-xl lg:text-2xl font-bold text-center  text-blue-900 text-opacity-70 mt-4 lg:mt-8'>Buy Flat With Land Share In Just 4 Steps</h1>
-			<p className='text-center text-xsm lg:text-sm mt-2 lg:mt-4'>Transparency is a big issue in real estate sector. Before investing your hrd earned</p>
+			<p className='text-center text-xsm lg:text-sm mt-2 lg:mt-4'>Transparency is a big issue in real estate sector. Before investing your hard earned</p>
 
 			<hr className='h-[1px] mx-auto  bg-black mt-2 lg:mt-5 lg:mb-5' />
 
@@ -643,47 +653,56 @@ function Home() {
 
 
 			</div>
-
+{/**brand ...start */}
 			<div className='lg:mx-20 mt-5 lg:mt-14 p-2 lg:p-0 '>
 				<p className='text-lg lg:text-2xl font-bold px-3 border-l-8 border-red-500 mb-5  text-blue-900 text-opacity-70'>Associate & Suppliers</p>
 
 
 				<div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10  gap-5 p-2 lg:p-0">
 					<div className=' lg:h-1/1 lg:w-1/2 flex justify-center items-center '>
-						<img src={brand1} alt="" />
+
+						<a href="https://bsrm.com/"><img src={brand1} alt="" /></a>
 
 					</div>
 					<div className=' p-4 py-10  lg:h-1/1 lg:w-1/2 flex justify-center items-center'>
-						<img src={brand2} alt="" />
+						<a href="https://www.bracbank.com/en/"><img src={brand2} alt="" /></a>
+						
 
 					</div>
 					<div className=' p-4 py-10  lg:h-1/1 lg:w-1/2 flex justify-center items-center'>
-						<img src={brand3} alt="" />
+						<a href="https://www.primebank.com.bd/"><img src={brand3} alt="" /></a>
+						
 
 					</div>
 					<div className=' p-4 py-10 lg:h-1/1 lg:w-1/2 flex justify-center items-center  '>
-						<img src={brand4} alt="" />
+						<a href="https://www.mgi.org/businessverticals/cement"><img src={brand4} alt="" /></a>
+						
 
 					</div>
 					<div className=' p-4 py-10 lg:h-1/1 lg:w-1/2 flex justify-center items-center hidden md:block'>
-						<img src={brand5} alt="" />
+						<a href="https://www.ksrm.com.bd/contact-us/index.html"><img src={brand5} alt="" /></a>
+						
 
 					</div>
 					<div className=' p-4 py-10  lg:h-1/1 lg:w-1/2 flex justify-center items-center hidden md:block'>
-						<img src={brand6} alt="" />
+						<a href="https://crowncement.com/"><img src={brand6} alt="" /></a>
+						
 
 					</div>
 					<div className=' p-4 py-10  lg:h-1/1 lg:w-1/2 flex justify-center items-center hidden md:block'>
-						<img src={brand7} alt="" />
+						<a href="https://abulkhairsteel.com/"><img src={brand7} alt="" /></a>
+						
 
 					</div>
 					<div className=' p-4 py-10 lg:h-1/1 lg:w-1/2 flex justify-center items-center  hidden md:block'>
-						<img src={brand8} alt="" />
+						<a href="https://www.rakceramics.com/bangladesh/en-bd/"><img src={brand8} alt="" /></a>
+						
 
 					</div>
 				</div>
 
 			</div>
+			{/**brand ...end */}
 			{/**<div className="flex flex-col lg:flex-row gap-5 p-2 ">
 					<div className='border-2 p-4  h-1/1 w-1/2 flex justify-center items-center '>
 						<img src={brand5} alt="" />
@@ -704,7 +723,7 @@ function Home() {
 				</div> */}
 
 
-			
+
 
 
 
@@ -750,7 +769,7 @@ function Home() {
 				<div className="max-w-lg   p-4 lg:p-0 lg:text-start">
 					<div className='max-w-lg'>
 						<p className='text-lg lg:text-2xl font-bold px-3 border-l-8 border-red-500 mb-5'>Visit Our Youtube Chanel</p>
-						<p className='text-sm'>Start your trial. Invite your team. Join the thousands of care professionals using Therapy PMS to run their practice every day.</p>
+						<p className='text-sm'>Start your trial. Invite your team. Genex Properties Ltd. offers flat at 40% less cost of current market price with luxurious facilities. Build Your Dream Home With Us.</p>
 						<div class="flex justify-center lg:justify-start space-x-2 mt-5">
 							<button
 								type="button"
@@ -789,7 +808,7 @@ function Home() {
 					<img src={Gallary1} className='rounded hidden md:block' alt="" />
 				</div>
 				<div>
-					<img src={Gallary1} className='rounded hidden md:block' alt="" />
+					<img src={Gallary2} className='rounded h-[625px] w-full hidden md:block' alt="" />
 				</div>
 			</div>
 			<div className="flex justify-center gap-5 p-2 lg:p-0">
@@ -813,80 +832,86 @@ function Home() {
 				{/** <div className=''>
 					<img src={Bg2} alt="" />
 				</div>*/}
+				<section
+					class="container flex items-center justify-center h-screen m-auto  bg-fixed bg-center bg-cover custom-img "
+				>
+					
+						<div className='  rounded-lg shadow-2xl p-5   bg-black bg-opacity-70  hidden md:block'>
+							<div className="  ">
+								<form action="https://formspree.io/f/xbjbjyqk"
+									method="POST" >{/**onSubmit={handleSubmit(onSubmit)} */}
+									<h1 className=' text-2xl  font-bold text-white mb-2'>Build Your Dream Home With Us</h1>
+									<p className='max-w-lg text-white'>share your contact details with us. Our Property Experts will call You soon</p>
 
-				<div className='  rounded-lg shadow-2xl p-5   bg-black bg-opacity-70 lg:mt-20 hidden md:block'>
-					<div className="  ">
-						<form action="https://formspree.io/f/xbjbjyqk"
-							method="POST" onSubmit={handleSubmit(onSubmit)}>
-							<h1 className=' text-2xl  font-bold text-white mb-2'>Build Your Dream Home With Us</h1>
-							<p className='max-w-lg text-white'>share your contact details with us. Our Property Experts will call You soon</p>
+
+									{/*-- Email input-- */}
+									<div className="mb-6 mt-5 text-white">
+										<label htmlFor="exampleFormControlInput">FullName*</label>
+										<input
+											type="text"
+											className="form-control block w-full px-4 py-2 text-lg  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
+											name="exampleFormControlInput"
+											id="exampleFormControlInput"
+											placeholder="Fullname"
+											required
+
+										/>
+
+									</div>
+									<div className="mb-6 text-white">
+										<label htmlFor="exampleFormControlInput2">Phone</label>
+										<input
+											type="number"
+											className="form-control block w-full px-4 py-2 text-lg  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
+											name="exampleFormControlInput2"
+											id="exampleFormControlInput2"
+											placeholder="Phone"
+											required
+										/>
+									</div>
+									<div className="mb-6 text-white">
+										<label htmlFor="exampleFormControlInput3">Email*</label>
+										<input
+											type="email"
+											className="form-control block w-full px-4 py-2 text-lg  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
+											name="exampleFormControlInput3"
+											id="exampleFormControlInput3"
+											placeholder="Email"
+											required
+											{...register("email", { required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i })}
+										/>
+										{errors.email && <span>Invalid email</span>}
+									</div>
 
 
-							{/*-- Email input-- */}
-							<div className="mb-6 mt-5 text-white">
-								<label htmlFor="exampleFormControlInput">FullName*</label>
-								<input
-									type="text"
-									className="form-control block w-full px-4 py-2 text-lg  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
-									name="exampleFormControlInput"
-									id="exampleFormControlInput"
-									placeholder="Fullname"
-									required
-									
-								/>
-								
+
+
+
+
+									{/* Submit button */}
+									<div className="flex flex-col lg:flex-row  justify-center gap-2 mb-6">
+										<button
+											type="submit"
+											className="inline-block px-9 py-2 w-full bg-blue-900 bg-opacity-80 text-white font-medium   rounded shadow-md "
+										>
+											SUBMIT
+										</button>
+										<button
+											type="button"
+											className="inline-block px-9 py-2 w-full bg-blue-900 bg-opacity-80 text-white font-medium   rounded shadow-md "
+										>
+											<LocalPhoneSharpIcon />		 <a href="tel:+88001748885444p123">Call Now</a>
+										</button>
+									</div>
+
+									{/* 2 column grid layout for inline styling */}
+
+								</form>
 							</div>
-							<div className="mb-6 text-white">
-								<label htmlFor="exampleFormControlInput2">Phone</label>
-								<input
-									type="number"
-									className="form-control block w-full px-4 py-2 text-lg  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
-									name="exampleFormControlInput2"
-									id="exampleFormControlInput2"
-									placeholder="Phone"
-									required
-								/>
-							</div>
-							<div className="mb-6 text-white">
-								<label htmlFor="exampleFormControlInput3">Email*</label>
-								<input
-									type="email"
-									className="form-control block w-full px-4 py-2 text-lg  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
-									name="exampleFormControlInput3"
-									id="exampleFormControlInput3"
-									placeholder="Email"
-									required
-									{...register("email", { required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i })}
-								/>
-								{errors.email && <span>Invalid email</span>}
-							</div>
-
-
-
-
-
-
-							{/* Submit button */}
-							<div className="flex flex-col lg:flex-row  justify-center gap-2 mb-6">
-								<button
-									type="submit"
-									className="inline-block px-9 py-2 w-full bg-blue-900 bg-opacity-80 text-white font-medium   rounded shadow-md "
-								>
-									SUBMIT
-								</button>
-								<button
-									type="button"
-									className="inline-block px-9 py-2 w-full bg-blue-900 bg-opacity-80 text-white font-medium   rounded shadow-md "
-								>
-									<LocalPhoneSharpIcon />		 <a href="tel:+88001748885444p123">Call Now</a>
-								</button>
-							</div>
-
-							{/* 2 column grid layout for inline styling */}
-
-						</form>
-					</div>
-				</div>
+						</div>
+					
+				</section>
+				
 
 			</div>
 
@@ -898,7 +923,7 @@ function Home() {
 
 
 
-		</div>;
+		</div>
 	</div>
 }
 

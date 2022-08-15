@@ -19,12 +19,12 @@ const Contact = () => {
             <div className=" bg-slate-200 text-center p-6 rounded">
                 <EmailIcon sx={{ fontSize: 70 }} />
                 <h3 className="text-lg font-semibold mt-4 mb-2">Email Address</h3>
-                <p className=" text-gray-500 ">info@genex.com</p>
+                <p className=" text-gray-500 ">genexpropertiesltd@gmail.com</p>
             </div>
             <div className=" bg-slate-200 text-center p-6 rounded">
                 <LocalPhoneIcon sx={{ fontSize: 70 }} />
                 <h3 className="text-lg font-semibold mt-4 mb-2">Phone Number</h3>
-                <p className=" text-gray-500 ">+880 1888 042371</p>
+                <p className=" text-gray-500 ">+8801748885444</p>
                 <p className=" text-gray-500 ">+880 1888 042371</p>
             </div>
             
@@ -44,14 +44,7 @@ const Contact = () => {
                             placeholder="Name"
                         />
                     </div>
-                    <div className="mb-6 ">
-                        <input
-                            type="text"
-                            className="form-control block w-full px-4 py-2 text-md  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
-                            id="exampleFormControlInput2"
-                            placeholder="Username"
-                        />
-                    </div>
+                    
                     <div className="mb-6 ">
                         <input
                             type="text"
@@ -136,7 +129,7 @@ const Contact = () => {
                             id="exampleFormControlInput2"
                             placeholder="Username"
                         />
-                        <span> Accept Our Terms & Condition Privacy Policy </span>
+                        <span> Accept Our Terms & Condition Privacy Policy <a href="https://github.com/YEL-59">.</a> </span>
                     </div>
 
                     {/* Submit button */}
