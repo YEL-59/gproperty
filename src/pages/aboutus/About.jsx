@@ -16,7 +16,7 @@ function About() {
         {
             id: 2,
           
-            employeeName: "Md.Arif islam",
+            employeeName: "Tasnim jerin trina",
             employeeDesi: "Co-Founder & Chairman",
         },
 
@@ -25,7 +25,7 @@ function About() {
         {
             id: 1,
           
-            employeeName: "Md.Arif islam",
+            employeeName: "Md.oli ullah",
             employeeDesi: "General Manager",
         },
 

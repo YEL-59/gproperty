@@ -11,8 +11,8 @@ function Navbar() {
 		<>
 		
 		
-			<nav className="bg-white shadow-2xl lg:text-black text-black sticky top-0 w-full z-50">
-				<div className="container mx-auto flex items-center font-medium justify-between">
+			<nav className="bg-white shadow-2xl lg:text-black text-black  sticky top-0 w-full z-50">
+				<div className="container mx-auto flex items-center font-semibold justify-between">
 					<div className="z-50 p-5 lg:w-auto w-full flex justify-between">
 						<img src={Logo} alt="logo" className="lg:cursor-pointer h-10" />
 						<div className="text-3xl lg:hidden" onClick={() => setOpen(!open)}>
