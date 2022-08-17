@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bdd46565.css",
-    "main.js": "/static/js/main.7472b34d.js",
+    "main.js": "/static/js/main.86d2075c.js",
     "static/media/cm2.gif": "/static/media/cm2.1acec2c7acc1f9cb8b69.gif",
     "static/media/Artboard 1.png": "/static/media/Artboard 1.76fe08f995cfbb5c20df.png",
     "static/media/virus.gif": "/static/media/virus.637d976b788d0a522c8a.gif",
@@ -39,10 +39,10 @@
     "static/media/brac-bank.png": "/static/media/brac-bank.08b4a1a9a927e1ee2285.png",
     "index.html": "/index.html",
     "main.bdd46565.css.map": "/static/css/main.bdd46565.css.map",
-    "main.7472b34d.js.map": "/static/js/main.7472b34d.js.map"
+    "main.86d2075c.js.map": "/static/js/main.86d2075c.js.map"
   },
   "entrypoints": [
     "static/css/main.bdd46565.css",
-    "static/js/main.7472b34d.js"
+    "static/js/main.86d2075c.js"
   ]
 }
