@@ -4,7 +4,7 @@ import LocalAtmIcon from "@mui/icons-material/LocalAtm";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 const Career = () => {
     return (
-        <div>
+        <div> 
             <div className="container mx-auto flex lg:flex-row flex-col  justify-evenly   mt-20">
                 <div class="   ">
                     <div class="p-6  shadow-lg rounded-lg">
@@ -111,6 +111,7 @@ const Career = () => {
                                 <p>Software</p>
                                 <p>Development</p>
                             </div>
+
                         </div>
                     </div>
                 </div>
